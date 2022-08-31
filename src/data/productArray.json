@@ -1,8 +1,8 @@
-
-[{
+[
+  {
     "id": 1,
     "title": "Vicky Velvet Armchair",
-    "price": 379.00,
+    "price": 379.0,
     "description": "Stylish and comfortable, the padding on the charming chair in a trendy retro design provides exceptionally good comfort, while the decorative to padded studs at the back cushion targeted emphasis and the optical appearance designed enhance.",
     "category": "chairs",
     "image": "https://m.media-amazon.com/images/I/81Tar-t97VL._AC_SL1500_.jpg",
@@ -10,7 +10,11 @@
       "rate": 4.5,
       "count": 120
     },
-    "images":["https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71NSwnLzSIL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/91a0ZU0QwRL._AC_SL1500_.jpg"]
+    "images": [
+      "https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71NSwnLzSIL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/91a0ZU0QwRL._AC_SL1500_.jpg"
+    ]
   },
   {
     "id": 2,
@@ -23,7 +27,180 @@
       "rate": 4.5,
       "count": 120
     },
-    "images":["https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"]}
-    
+    "images": [
+      "https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"
     ]
+  },
+  {
+    "id": 21,
+    "title": "Meerveil Bookcase",
+    "price": 68.13,
+    "description": "Industrial design: this five-tier S-shaped stand shelf adopts modern industrial design and can match your different interior styles. The S-shaped shelf is more beautiful and can make the decoration of your living room, bedroom and study room more individual.",
+    "category": "bookcase",
+    "image": "https://m.media-amazon.com/images/I/81r-+BkvR-L._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/61YiAKHSSjL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81IK0OQybmL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71wfM3OcnWL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "JOISCOPE Bookcase",
+    "price": 49.99,
+    "description": "Joiscope bookcase has enough compartments in which your favourite books, vases or decorative figures come to its own. Can be used as a bookcase, plant stand, display unit, room divider, office, hallway, entrance area and dining room.",
+    "category": "bookcase",
+    "image": "https://m.media-amazon.com/images/I/814AhTmT5fL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81LRKIHeuSL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81N+D4mzy5L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71yH6X3d1sL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "GIKPAL Ladder Shelf Bookcase",
+    "price": 49.99,
+    "description": "Home and office decorations: a retro colour in rustic and industrial style makes this ladder shelf both practical and decorative. It adds elegance to your home and office, whether it's a bookshelf, plant stand, bathroom cabinet or even a kitchen organiser",
+    "category": "bookcase",
+    "image": "https://m.media-amazon.com/images/I/81S3QTHYrWS._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/816Y1fgobiS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81SKpnZStpS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81BOGw06YpS._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "YOLEO Wooden Bookcase",
+    "price": 89.97,
+    "description": "The back of the bookcase has a metal X bracket to improve the overall weight. Wall anchors are used to fix and prevent bookshelves from falling over. Adjustable foot pads protect the floor and can be used on uneven surfaces.",
+    "category": "bookcase",
+    "image": "https://m.media-amazon.com/images/I/81Y14JV7XZS._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.6,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71jxLXfoTAL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71sDiP+Jh+L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71b9S4U0HsL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Etnicart Bookcase Contemporary Design",
+    "price": 92.97,
+    "description": "Made of environmentally friendly strengthened and thicker. Shockproof, dimensionally stable and durable. Shelf white high gloss shelf grey DVD cabinet step shelf white shelf",
+    "category": "bookcase",
+    "image": "https://m.media-amazon.com/images/I/61xcuPVRDmL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.2,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/519MKS1jNqL._AC_SY879_.jpg",
+      "https://m.media-amazon.com/images/I/61Ekd-J4ncL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/617NCDoWplL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "INSPIRE - Kanel floor lamp",
+    "price": 76.99,
+    "description": "This current floor lamp is ideal for adding additional lighting and decorating a room such as a living room or a bedroom by creating an original lighting effect. Thanks to its natural style, wooden stand and geometric design, it will add a touch of softness and modernity to your interior.",
+    "category": "floor lamp",
+    "image": "https://m.media-amazon.com/images/I/81UenK+dwzL._AC_SX342_SY445_.jpg",
+    "rating": {
+      "rate": 4.1,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81LqYMz1WkL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81S8PHJ8gtL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/810DQqu668L._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Depuley LED Floor Lamp",
+    "price": 75.99,
+    "description": "Creative and unique design: our floor lamp has two lamp heads, which are made of brown high-quality fabric cover. When opened, the soft light penetrates the fabric cover and brightens up your room. It is not only a reading lamp, but also a decorative lamp that brings a warm atmosphere to your home.",
+    "category": "floor lamp",
+    "image": "https://m.media-amazon.com/images/I/61HBF1uvszL._AC_SX522_.jpg",
+    "rating": {
+      "rate": 4,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/61cgyyp6q4L._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/61cgyyp6q4L._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/51IniY9D39L._AC_SX522_.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "LED Arc Floor Lamp",
+    "price": 179.99,
+    "description": "Arc lamp floor lamp: this extravagant LED floor lamp with its curved design, brings amazing visual attraction and interesting light effects, with a unique feeling of atmosphere. The creative modern design makes your room full of art and uniqueness.",
+    "category": "floor lamp",
+    "image": "https://m.media-amazon.com/images/I/61aAhD++M7L._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.5,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/61kOCaMIhES._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/610-G2L6oxL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61j5dwbpQrL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Retro Floor Lamp",
+    "price": 52.99,
+    "description": "Black and gold design - retro and elegant: the semi-spherical, matte black lampshade has a golden vintage coating on the inside that creates a classic and elegant atmosphere for your rooms. The minimalist and retro design creates a beautiful light effect.",
+    "category": "floor lamp",
+    "image": "https://m.media-amazon.com/images/I/81PwmNF8JpL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.3,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71ZdTfIihPL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81a85lwwcaL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71NhWHdUGNL._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Jago® Arc Floor Lamp",
+    "price": 53.95,
+    "description": "This white arc lamp with marble base gives your living room, bedroom or office a touch of simplicity and elegance. The lampshade of our floor lamp can be rotated, so that you can illuminate any area",
+    "category": "floor lamp",
+    "image": "https://m.media-amazon.com/images/I/61CB5nqo5UL._AC_SX679_.jpg",
+    "rating": {
+      "rate": 4.4,
+      "count": 120
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71jQdltwXgL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71IC4+fdXDL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61n0CKfoKZL._AC_SX679_.jpg"
+    ]
+  }
+]
