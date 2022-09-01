@@ -24,6 +24,19 @@
       "count": 120
     },
     "images":["https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
-    "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"]}
+    "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"]},
+    {
+      "id": 3,
+      "title": "Kartell Ero/s 4837E3 Shell Chair with Frame/4 Feet Orange",
+      "price": 209.99,
+      "description": "Elegant design: WAHSON is the perfect combination of armchair and stool with golden legs for maximum elegance. Wherever it is placed, it is at the centre of attention..",
+      "category": "chairs",
+      "image": "https://m.media-amazon.com/images/I/81JLXUUcjyL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 120
+      },
+      "images":["https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"]}
     
     ]

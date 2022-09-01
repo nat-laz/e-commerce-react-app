@@ -1,0 +1,8 @@
+.thumbnails:hover {
+    opacity: 40%;
+
+}
+
+.thumbnails {
+    opacity: 100%;
+}
