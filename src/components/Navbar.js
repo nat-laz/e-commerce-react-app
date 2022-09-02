@@ -18,9 +18,6 @@ export default function Navbar() {
       <li><Link to="/contactus">Contact Us</Link></li>
       <li><Link to="/profile">Profile</Link></li>
 
-
-
-
     </ul>
   )
 }
