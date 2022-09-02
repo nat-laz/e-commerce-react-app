@@ -6,7 +6,7 @@ const SingleProduct = ({ products }) => {
   console.log(location);
   return (
     <div>
-      <h1>single product page</h1>
+      <h1>SinglePageProduct</h1>
       <img src={location.products.image} alt="" width={200} />
       <h1>{location.products.title}</h1>
       <h3>{location.products.description}</h3>
