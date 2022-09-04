@@ -14,7 +14,7 @@ export default function Navbar() {
       }}
     >
       <div>
-        <img src={require("../images/furniture.png")} alt="" width="150" />
+       <Link to="/"><img src={require("../images/furniture.png")} alt="" width="150" /></Link>
       </div>
       <li>
         <Link to="/register">Register</Link>

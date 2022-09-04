@@ -1,6 +1,6 @@
 
 import React, { useContext } from "react";
-import { AppContext } from "../components/contextAPI/context";
+import { AppContext } from '../context/AppContext';
 import { NavLink } from "react-router-dom";
 import "./Products.css";
 
@@ -12,11 +12,11 @@ export default function Products() {
       {products.map((item) => {
         return (
           <div className="products-box" key={item.id}>
-            <NavLink to={`products/${item.id}`} products={item}>
+            <NavLink to={`/products/${item.id}`} products={item}>
               <img
                 className="products-img"
                 src={item.image}
-                style={{maxHeight:"200"}}
+                width={300}
                 alt=""
               />
             </NavLink>
