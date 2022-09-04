@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.js";
 import ContactUs from "./pages/ContactUs.js";
 import NotFound from "./pages/NotFound.js";
 import Product from "./pages/Product.js";
-import Products from "./pages/products/Products.js";
+import Products from "./pages/Products.js";
 import Home from "./pages/Home.js";
 import Profile from "./pages/Profile.js";
 import Cart from "./pages/Cart.js";
