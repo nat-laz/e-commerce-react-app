@@ -20,21 +20,324 @@
   },
   {
     "id": 2,
-    "title": "Wahson Velvet Relaxing Chair",
+    "title": "Wahson Velvet Lounge Chair",
     "price": 209.99,
     "description": "Elegant design: WAHSON is the perfect combination of armchair and stool with golden legs for maximum elegance. Wherever it is placed, it is at the centre of attention..",
     "category": "chairs",
-    "image": "https://m.media-amazon.com/images/I/81JLXUUcjyL._AC_SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg",
     "rating": {
       "rate": 4.5,
       "count": 120
     },
     "images": [
-      "https://m.media-amazon.com/images/I/71+RWqIawmL._AC_SL1500_.jpg",
+      
       "https://m.media-amazon.com/images/I/71DhTnGTb4L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/717BCbPj7cL._AC_SL1500_.jpg"
     ]
   },
+  {
+    "id": 3,
+    "title": "HNNHOME Eris Padded Desk Chair",
+    "price": 89.99,
+    "description": "Beautiful diamond shaped seat, high quality seat material with fabric cover in many colours to choose from ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/81x5hbZyVCL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 5.5,
+      "count": 20
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71ocBVCdRPL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71iOKmadW2L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71sNDMsmDYL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Bensos 360°Swivel",
+    "price": 127.99,
+    "description": "Height adjustment function: Unique petal back design, super-soft velvet cover. You can freely adjust the height of the seat of the desk chair with a pneumatic gas lift system. ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/61NjB0dDR7L._AC_SL1100_.jpg",
+    "rating": {
+      "rate":4,
+      "count": 20
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/61NjB0dDR7L._AC_SL1100_.jpg",
+      "https://m.media-amazon.com/images/I/61pcqiD7arL._AC_SL1100_.jpg",
+      "https://m.media-amazon.com/images/I/615y7NSPmUL._AC_SL1100_.jpg"
+    ]
+  },
+
+  {
+    "id": 5,
+    "title": "Emillian Rocking Chair",
+    "price": 199.99,
+    "description": "Comfortable and wide seat design: the seat of this rocking chair is wide and offers you additional freedom of movement to make you feel comfortable. In addition, the seat is comfortable and moderately soft, so breastfeeding mothers cannot get up easily. You won't wake up your little one when you gently get up from your seat. ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/816jc91W+8L._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 26
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71uYD8o8XdL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61PL8TMk+QL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/617-e8wm+8L._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "McDouglas Armchair with Stool",
+    "price": 249.99,
+    "description": "Ergonomic design: the chair with curved backrest and seat cushion fits perfectly to the human body curve. Wide seat (59 x 79) for perfect resting space. 115° inclined high backrest with additional lumbar cushion reduces pressure on the lumbar spine.",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/71KrustPy8L._AC_SL1500_.jpg",
+    "rating": {
+      "rate":5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71f-QV9ZUFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71NqrZvRocL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81b1qBaqrEL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Clarita armchair",
+    "price": 239.99,
+    "description": "Vintage style: armchair living room. This lounge chair is a classic for the home. This distressed faux leather chair offers a comfortable, plump seat. Small and compact, suitable for smaller spaces and urban interiors. Also suitable for bedrooms, living rooms, balconies, porches, waiting rooms etc.",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/81wdbfe6-XL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81VCTFtlL-L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71Whj9mnWVL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71p0dKj9SvL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "HOOSENG Armchair",
+    "price": 128.99,
+    "description": "Modern design: this living room chair comes with a fashionable look with the slim styling and eye-catching leather. The combination of black frame and orange bright appearance gives this chair a touch of sophistication and gives this chair a unique lightweight industrial and minimalist look. ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/812zzAclW+L._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71wq+T4wzHL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81Uj2sxC1rL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61t6kskI02L._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "CAIRO Peco Designer Lounge Chair",
+    "price": 569.91,
+    "description": "Modern design: this living room chair comes with a fashionable look with the slim styling and eye-catching soft fur. The siloutte and fabric gives this chair a touch of sophistication and a unique lightweight industrial and minimalist look. ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/61p340th0fL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71KVdT2w98L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/71DlCmVsFoL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61vqIpQuDZL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Club Chair Swivel ",
+    "price":91.58 ,
+    "description": "Modern design: this living room chair comes with a fashionable look with the slim styling and eye-catching soft fur. The siloutte and fabric gives this chair a touch of sophistication and a unique lightweight industrial and minimalist look. ",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/A1cczIB-pOL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/91fvieCc1jL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/414f9soSmFL._AC_.jpg",
+      "https://m.media-amazon.com/images/I/A1XZri-xGML._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Mingone Set of 2 Dining Chairs",
+    "price":259.99 ,
+    "description": "HIGH QUALITY:Solid wood feet and padded dining chair. The cushions are made from high quality PVC and have elegant beech legs and colours that will never fade.",
+    "category": "chairs",
+    "image": "https://m.media-amazon.com/images/I/51qc4tuiabL._AC_SL1000_.jpg",
+    "rating": {
+      "rate":4,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/617HwfoYeaL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/51uX2oXfGqL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61chsnW+O5L._AC_SL1000_.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Yurupa ML34-A Side Table",
+    "price":129.00 ,
+    "description": "Yurupa coffee table is tailored to your living with optimised dimensions. Made of high-quality and realistic wood effect wood material (chipboard). ",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/81yYXfiGkoL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81yYXfiGkoL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81RqeOvnjfL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81IFrsMApvL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "VASAGLE Coffee Tables",
+    "price":65.99 ,
+    "description": "Undoubtedly an eye-catcher: Modern and industrial. These tables allow you to transform your living space. Round plate, geometric base, simple surface and black metal frame – your guests won’t be able to take their eyes off it ",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/91c-zERopYL._AC_SX522_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 16
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/91ns6MUZE-L._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/71RbT7BMB-L._AC_SL1500_.jpg"
+      
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Yurupa RL2-AA Side Table",
+    "price": 109.00,
+    "description": "Fits any style and can be easily combined with other items, in your study, living room, office, home office. Cheap to put snacks, drinks, book, lamp. It is a great addition to your home. ",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/81thPB4m7EL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":3.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81thPB4m7EL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81eEW-zWLFL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81bNXJQSFOL._AC_SL1500_.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Wood Industrial Coffee Table",
+    "price":99.95,
+    "description": " Our expressive coffee table impresses with a table top made of mango wood and a height-adjustable metal frame",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/61B0j3XzE-L._AC_SL1000_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/61L4QrSI1mL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61D1Bmvh70L._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61HwSF3H3xL._AC_SL1000_.jpg"
+    ]
+  },{
+    "id": 16,
+    "title": "Krok Wood Hans Dining Table",
+    "price":449.00,
+    "description": "Natural coloured, oiled and modern solid wood dining table. Hans table can be used as a dining room table or kitchen table. Wooden table with natural grain - elegant and strong  ",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/91gJ6CASl5L._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/715IjNb1SDL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81d1LlX7yaL._AC_SL1500_.jpg"
+     
+    ]
+  },{
+    "id": 17,
+    "title": "Krok Wood Lisbon Dining Table",
+    "price": 599.00, 
+    "description": "Natural colored, oiled and modern solid wood dining table. Table Lisbon can be used as a dining room table or kitchen table. Wooden table is with natural grain - elegant and strong",
+    "category": "",
+    "image": "https://m.media-amazon.com/images/I/81n6mukJ6RL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/717R79tciqL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81B7UrY1v4L._AC_SL1500_.jpg"
+      
+    ]
+  },{
+    "id": 18,
+    "title": "Mammut Solid Acacia",
+    "price":899.00,
+    "description": " The imposing cross legs in dark grey made of metal form an exciting contrast to the solid wooden plate and ensure a stable stand, for a particularly authentic look, the legs have been refined with welded seams and small unevenness in an industrial look ",
+    "category": "",
+    "image": "https://m.media-amazon.com/images/I/81XVcZb3lWS._AC_SL1500_.jpg",
+    "rating": {
+      "rate":3.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/51N71GweqFL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61BYt-W+dSL._AC_SL1000_.jpg",
+      "https://m.media-amazon.com/images/I/61IQ-1l-mhL._AC_SL1000_.jpg"
+    ]
+  },{
+    "id": 19,
+    "title": "Macadamia Tree Edge",
+    "price":1.290, 
+    "description": "Monolith = Made from a slice of wood. Continuous grain, free from glue grooves - a work of art created by nature",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/91rOXZhLhXL._AC_SL1500_.jpg",
+    "rating": {
+      "rate":5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/81kDb3wvrIL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/8186dqbVbqL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/91UFh5Jw5ZL._AC_SL1500_.jpg"
+    ]
+  },{
+    "id": 20,
+    "title": "Appia dining table",
+    "price":439.00,
+    "description": "Sturdy and robust workmanship. High-quality and durable replica veneer.",
+    "category": "tables",
+    "image": "https://m.media-amazon.com/images/I/71tLEbfVi+L._AC_SL1170_.jpg",
+    "rating": {
+      "rate":4.5,
+      "count": 12
+    },
+    "images": [
+      "https://m.media-amazon.com/images/I/71KC8J3kCxL._AC_SL1170_.jpg",
+      "https://m.media-amazon.com/images/I/71tLEbfVi+L._AC_SL1170_.jpg"
+     
+    ]
+  },
+
   {
     "id": 21,
     "title": "Meerveil Bookcase",
@@ -105,7 +408,7 @@
   },
   {
     "id": 25,
-    "title": "Etnicart Bookcase Contemporary Design",
+    "title": "Etnicart Bookcase",
     "price": 92.97,
     "description": "Made of environmentally friendly strengthened and thicker. Shockproof, dimensionally stable and durable. Shelf white high gloss shelf grey DVD cabinet step shelf white shelf",
     "category": "bookcase",
