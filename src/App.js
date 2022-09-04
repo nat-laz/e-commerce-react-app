@@ -10,7 +10,6 @@ import Profile from "./pages/Profile.js";
 import Cart from "./pages/Cart.js";
 import Login from "./pages/Login.js";
 import Register from "./pages/Register.js";
-import SingleProduct from "./pages/Product.js";
 
 function App() {
   return (
