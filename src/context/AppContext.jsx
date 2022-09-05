@@ -6,9 +6,10 @@ const AppContext = createContext();
 const AppContextProvider = ({ children }) => {
  
  const [products, setProducts] = useState(productArray);
+ const [cart, setCart] = useState([])
 
  const defaultContext = {
-  products, setProducts
+  products, setProducts, cart, setCart
  }
 
   return (

@@ -12,7 +12,7 @@ export default function Products() {
       {products.map((item) => {
         return (
           <div className="products-box" key={item.id}>
-            <NavLink to={`/products/${item.id}`} products={item}>
+            <NavLink to={`/products/${item.id}`} state={item}>
               <img
                 className="products-img"
                 src={item.image}
