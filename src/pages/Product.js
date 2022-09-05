@@ -4,8 +4,9 @@ import { AppContext } from "../context/AppContext";
 
 export default function Product() {
   const { products } = useContext(AppContext);
-  const { id } = useParams();
-  // console.log(id);
+  const { id } = useParams();//you get a string
+   console.log(id);
+   console.log(typeof id) ;
   const [product, setProduct] = useState({});
 
   useEffect(() => {
