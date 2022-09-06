@@ -4,8 +4,10 @@ import productArray from "../data/productArray.json";
 const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
-  const [products, setProducts] = useState(productArray);
-  const [cart, setCart] = useState([]);
+
+ const [user, setUser] = useState(null);
+ const [products, setProducts] = useState(productArray);
+ const [cart, setCart] = useState([])
 
   //Cart Functionality
   const deleteItemCart = (id) => {
@@ -32,14 +34,17 @@ const decrementQuantity = (item)=> {
       return product
     }
   }))
- }
+
   const defaultContext = {
     products,
     setProducts,
     cart,
     setCart,
     deleteItemCart,
-    incrementQuantity, decrementQuantity
+    incrementQuantity,
+    decrementQuantity,
+    user, 
+    setUser
   };
 
   return (
