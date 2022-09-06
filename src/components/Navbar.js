@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 export default function Navbar() {
+  const {cart} = useContext(AppContext)
   return (
     <ul
       style={{
@@ -26,7 +28,7 @@ export default function Navbar() {
         <Link to="/products">Products</Link>
       </li>
       <li>
-        <Link to="/cart">Cart</Link>
+        <Link to="/cart">Cart <sup>{cart.length}</sup></Link>
       </li>
       <li>
         <Link to="/contactus">Contact Us</Link>
