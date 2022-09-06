@@ -36,7 +36,10 @@ const AppContextProvider = ({ children }) => {
           return product;
         }
       })
-    )};
+
+  
+
+    )}
 
     const defaultContext = {
       user,
@@ -49,6 +52,7 @@ const AppContextProvider = ({ children }) => {
       incrementQuantity,
       decrementQuantity,
     };
+   
 
     return (
       <AppContext.Provider value={defaultContext}>
