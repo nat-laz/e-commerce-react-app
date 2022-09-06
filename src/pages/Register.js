@@ -1,7 +1,7 @@
 
-import { useContext, useEffect,useCallback, useState } from 'react';
-import { PlusOutlined } from '@ant-design/icons';
-import 'antd/dist/antd.css'; 
+import { useContext } from 'react';
+
+import 'antd/dist/antd.min.css'; 
 import {
   Form,
   Input,
@@ -16,7 +16,7 @@ import { AppContext } from '../context/AppContext';
 
 const { Option } = Select;
 
-const { RangePicker } = DatePicker;
+
 
 
 const Register = () => {
@@ -198,4 +198,4 @@ const prefixSelector = (
   );
 };
 
-export default () => <Register/>;
+export default Register;

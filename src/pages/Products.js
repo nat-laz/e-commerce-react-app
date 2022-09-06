@@ -20,7 +20,7 @@ export default function Products() {
               />
             </NavLink>
             <h2>{item.title}</h2>
-            <p>
+            <p id="product-price">
               <sup>€ </sup>
               {item.price}{" "}
             </p>
