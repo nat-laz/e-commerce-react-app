@@ -1,0 +1,83 @@
+.Cart {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100vw;
+}
+.cart-product {
+  width: 70vw;
+  height: 220px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: row;
+  margin: 12px;
+  min-width: 900px;
+}
+.cart-image {
+  width: 25%;
+  margin-right: 35px;
+  min-width: 200px;
+}
+.cart-image img {
+  object-fit: cover;
+  height: 219px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.cart-description {
+  width: 60%;
+  height: 220px;
+}
+.cart-buttons {
+  width: 15%;
+  height: 200px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-delete-btn {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.cart-quantity-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart-quantity-num {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.increment-decrement-btn {
+  border: 1px solid gray;
+  width: 42px;
+  height: 36px;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Cart h1 {
+  width: 60vw;
+}
+.Cart h1 span {
+  float: right;
+}
+.cart-order-btn {
+  background-color: transparent;
+  padding: 12px;
+  font-size: 1.2em;
+  width: 150px;
+  cursor: pointer;
+}
