@@ -1,6 +1,9 @@
 
-import { useContext, useEffect,useCallback, useState } from 'react';
+
+import { useContext } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
+
+
 import 'antd/dist/antd.min.css'; 
 import {
   Form,
@@ -198,4 +201,4 @@ const prefixSelector = (
   );
 };
 
-export default () => <Register/>;
+export default Register;

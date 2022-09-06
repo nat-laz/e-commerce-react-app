@@ -1,0 +1,32 @@
+.Product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.single-product-box {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+}
+.single-product-img-arrows {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.single-product-images-carousel {
+  width: 75%;
+  /* margin-right: 35px; */
+  cursor: pointer;
+  object-fit: cover;
+}
+
+/* .single-product-images-carousel img{
+   } */
+.single-page-details {
+  width: 550%;
+  padding: 15px;
+}
