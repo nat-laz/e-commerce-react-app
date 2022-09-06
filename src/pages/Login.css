@@ -1,0 +1,12 @@
+.Login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.LoginForm {
+    width:300px;
+}
+.LoginCreateAccount {
+    width:500px;
+}

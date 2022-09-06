@@ -1,5 +1,8 @@
 
+
 import { useContext } from 'react';
+import { PlusOutlined } from '@ant-design/icons';
+
 
 import 'antd/dist/antd.min.css'; 
 import {
@@ -13,6 +16,7 @@ import {
   
 } from 'antd';
 import { AppContext } from '../context/AppContext';
+import { useNavigate } from 'react-router-dom';
 
 const { Option } = Select;
 
@@ -21,15 +25,28 @@ const { Option } = Select;
 
 const Register = () => {
 
-  
+  const navigate = useNavigate();
   const { setUser } = useContext(AppContext);
  
 
 
 const formSubmittedData = (values) => {
   setUser(values);
-  console.log(values)
-  
+  console.log(values);
+
+
+  let registeredUsers = {
+    firstName: values.firstName,
+    lastName: values.lastName,
+    email: values.email,
+    password: values.password,
+  } 
+    localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
+    navigate('/profile');
+
+
+
+
 }
 
 
@@ -99,14 +116,8 @@ const prefixSelector = (
         ]}>
           <Input />
         </Form.Item>
-        <Form.Item label="Country" name="country"
-        rules={[
-          {
-            required: true,
-            message: 'The Country is required.',
-          }
-        ]}>
-          <Select>
+        <Form.Item label="country">
+            <Select>  
           <Select.Option value="Germany">Germany</Select.Option>
           <Select.Option value="Spain">Spain</Select.Option>
           <Select.Option value="England">England</Select.Option>
@@ -120,10 +131,7 @@ const prefixSelector = (
         </Form.Item>
         <Form.Item label="City"  name="city"
            rules={[
-            {
-              required: true,
-              message: 'The city is required.',
-            },
+            
             {
               pattern: /^[a-zA-Z0-9]+$/,
               message: 'city can only include letters and numbers.',
@@ -135,12 +143,7 @@ const prefixSelector = (
       <Form.Item
         name="phone"
         label="Phone Number"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your phone number!',
-          },
-        ]}
+       
       >
         <Input
           addonBefore={prefixSelector} 
