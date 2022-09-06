@@ -2,10 +2,18 @@ import Reac, {useContext} from 'react'
 import { AppContext } from '../context/AppContext'
 import { Navigate } from "react-router-dom";
 export default function Profile() {
-  const {user} = useContext(AppContext)
+  const {user,setUser} = useContext(AppContext)
    if (user) {
     return (
-    <div><h1>{user.firstName}</h1></div>
+    <div>
+      <h1>{user.firstName}, {user.lastName}</h1>
+      <p>{user.email}</p>
+      <p>{user.city}</p>
+      <p>{user.phone}</p>
+      <button onClick={()=>setUser(null)}>log out</button>
+
+
+    </div>
   );
     } else {
       return <Navigate to="/login"/>;

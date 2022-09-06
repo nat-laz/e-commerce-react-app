@@ -12,14 +12,17 @@ const AppContextProvider = ({ children }) => {
     products:[],
     user: null,
     cart: [],
-    registeredUsers: [],
+    registeredUsers: JSON.parse(localStorage.getItem("registeredUsers")) || [],
   }; */
 
   useEffect(()=>{
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
+    console.log(registeredUsers);
+    
     if(registeredUsers){
       setUser(registeredUsers);
     }
+    
   },[])
 
 

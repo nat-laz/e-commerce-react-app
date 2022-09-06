@@ -20,9 +20,10 @@ export default function Navbar() {
       </div>
       {user ?  <li>
         <Link to="/profile">Profile</Link>
-      </li> : <><li>
+      </li> : <>
+      {/* <li>
         <Link to="/register">Register</Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/login">Login</Link>
       </li> </>}
