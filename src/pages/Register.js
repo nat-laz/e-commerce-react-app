@@ -1,7 +1,6 @@
 
 import { useContext, useEffect,useCallback, useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
-import 'antd/dist/antd.css'; 
 import {
   Form,
   Input,

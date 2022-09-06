@@ -36,9 +36,11 @@ const AppContextProvider = ({ children }) => {
           return product;
         }
       })
-    );
+    )};
 
     const defaultContext = {
+      user,
+      setUser,
       products,
       setProducts,
       cart,
@@ -46,8 +48,6 @@ const AppContextProvider = ({ children }) => {
       deleteItemCart,
       incrementQuantity,
       decrementQuantity,
-      user,
-      setUser,
     };
 
     return (
@@ -56,6 +56,6 @@ const AppContextProvider = ({ children }) => {
       </AppContext.Provider>
     );
   };
-};
+
 
 export { AppContext, AppContextProvider };
