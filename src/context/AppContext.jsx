@@ -4,19 +4,6 @@ import productArray from "../data/productArray.json";
 const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
-<<<<<<< HEAD
- 
- const [products, setProducts] = useState(productArray);
- const [cart, setCart] = useState([])
-
- const defaultContext = {
-  products, setProducts, cart, setCart
- }
-
-  return (
-    <AppContext.Provider value={defaultContext}>{children}</AppContext.Provider>
-  );
-=======
   const [user, setUser] = useState(null);
   const [products, setProducts] = useState(productArray);
   const [cart, setCart] = useState([]);
@@ -69,7 +56,6 @@ const AppContextProvider = ({ children }) => {
       </AppContext.Provider>
     );
   };
->>>>>>> ae9cbc1fb35e963635b6cc8b599ebeec03b6187d
 };
 
 export { AppContext, AppContextProvider };
