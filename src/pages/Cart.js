@@ -1,19 +1,66 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
-
+import "./Cart.css";
+import { FaRegTrashAlt } from "react-icons/fa";
+import { MdRemove } from "react-icons/md";
+import { MdAdd } from "react-icons/md";
+import { v4 as uuid } from "uuid";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Cart() {
-  const {cart, setCart}  = useContext(AppContext)
+  const { cart, deleteItemCart, incrementQuantity, decrementQuantity } =
+    useContext(AppContext);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const sum = cart.reduce((acc, item) => {
+      acc += item.price * item.quantity;
+      return acc;
+    }, 0);
+    setTotal(sum);
+  }, [cart]);
+
   return (
-    <div>
-      <h2>update cart component</h2>
-      <div>
-        {cart.map(item=>(
-          <div>
-            {item.title}
+    <div className="Cart">
+      {cart.map((item) => (
+        <div key={uuid()} className="cart-product">
+          <div className="cart-image">
+            <img src={item.image} alt="" />
           </div>
-        ))}
-      </div>
-      </div>
-  )
+          <div className="cart-description">
+            <h2>{item.category.toUpperCase()}</h2>
+            <p>{item.title.toLowerCase()}</p>
+            <h3>{item.price} € </h3>
+          </div>
+          <div className="cart-buttons">
+            <div>
+              <FaRegTrashAlt
+                onClick={() => deleteItemCart(item.id)}
+                className="cart-delete-btn"
+              />
+            </div>
+            <div className="cart-quantity-wrapper">
+              <button
+                disabled={item.quantity === 1}
+                onClick={() => decrementQuantity(item)}
+                className="increment-decrement-btn"
+              >
+                <MdRemove />
+              </button>
+              <div className="cart-quantity-num">{item.quantity}</div>
+              <div className="increment-decrement-btn">
+                {" "}
+                <MdAdd onClick={() => incrementQuantity(item)} />
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+      <h1>
+        Total <span>{total.toFixed(2)} €</span>
+      </h1>
+      <button className="cart-order-btn">ORDER</button>
+    </div>
+  );
 }
