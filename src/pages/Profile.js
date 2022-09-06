@@ -1,7 +1,13 @@
-import React from 'react'
-
+import Reac, {useContext} from 'react'
+import { AppContext } from '../context/AppContext'
+import { Navigate } from "react-router-dom";
 export default function Profile() {
-  return (
-    <div><h1>Profile</h1></div>
-  )
+  const {user} = useContext(AppContext)
+   if (user) {
+    return (
+    <div><h1>{user.firstName}</h1></div>
+  );
+    } else {
+      return <Navigate to="/login"/>;
+    }
 }
