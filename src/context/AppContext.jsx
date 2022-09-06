@@ -36,7 +36,7 @@ const AppContextProvider = ({ children }) => {
           return product;
         }
       })
-    );
+    )}
 
     const defaultContext = {
       products,
@@ -49,6 +49,7 @@ const AppContextProvider = ({ children }) => {
       user,
       setUser,
     };
+   
 
     return (
       <AppContext.Provider value={defaultContext}>
@@ -56,6 +57,6 @@ const AppContextProvider = ({ children }) => {
       </AppContext.Provider>
     );
   };
-};
+
 
 export { AppContext, AppContextProvider };
