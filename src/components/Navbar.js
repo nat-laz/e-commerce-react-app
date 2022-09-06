@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 export default function Navbar() {
-  const {cart} = useContext(AppContext)
+  const {cart, user} = useContext(AppContext)
   return (
     <ul
       style={{
@@ -18,12 +18,17 @@ export default function Navbar() {
       <div>
        <Link to="/"><img src={require("../images/furniture.png")} alt="" width="150" /></Link>
       </div>
-      <li>
+      {user ?  <li>
+        <Link to="/profile">Profile</Link>
+      </li> : <>
+      {/* <li>
         <Link to="/register">Register</Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/login">Login</Link>
-      </li>
+      </li> </>}
+      
+      
       <li>
         <Link to="/products">Products</Link>
       </li>
@@ -33,9 +38,7 @@ export default function Navbar() {
       <li>
         <Link to="/contactus">Contact Us</Link>
       </li>
-      <li>
-        <Link to="/profile">Profile</Link>
-      </li>
+     
     </ul>
   );
 }
