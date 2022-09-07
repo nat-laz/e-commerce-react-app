@@ -1,6 +1,8 @@
 import React from 'react'
+import "./Pagination.css"
 
-export default function Pagination({productsPerPage, totalPosts}) {
+
+export default function Pagination({productsPerPage, totalPosts, paginate}) {
   const pageNumbers = [];
 
   for (let i = 1 ; i <= Math.ceil(totalPosts / productsPerPage); i++) {
@@ -14,8 +16,8 @@ export default function Pagination({productsPerPage, totalPosts}) {
         {pageNumbers.map(number => {
           return (
           <>
-          <li style={{fontSize:"3rem", margin:"10px", border:"1px solid black", padding:"10px"}} key={number}>
-          <a style={{fontSize:"2rem"}}href="!#">{number}</a></li>
+          <li className="Numero" key={number}>
+          <p onClick={()=>paginate(number)} style={{fontSize:"2rem", cursor:"pointer"}}>{number}</p></li>
           </>)
           })}
       </ul>
