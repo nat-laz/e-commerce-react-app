@@ -7,14 +7,17 @@ import Pagination from "./Pagination.js";
 export default function Products() {
   const { products  } = useContext(AppContext);
   console.log(products.length);
-  const [ currentPage] = useState(1);
+  const [ currentPage, setCurrentPage] = useState(1);
  // console.log(currentPage);
-  const [ productsPerPage] = useState(6);
+  const [ productsPerPage] = useState(10);
 //get Current Products
-const indexOfLastProduct = (currentPage * productsPerPage);
+const indexOfLastProduct = (currentPage * productsPerPage);//6
 
-const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+const indexOfFirstProduct = indexOfLastProduct - productsPerPage;//1
+const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);//6
+
+//change page
+const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -31,18 +34,20 @@ const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
                 alt=""
               />
             </NavLink>
+            <div style={{display:"flex"}}>
             <h2>{item.title}</h2>
             <p id="product-price">
-              <sup>€ </sup>
-              {item.price}{" "}
+              {`€ ${item.price}`}
+              
             </p>
+            </div>
           </div>
           </>
         );
       })}
       
     </div>
-    <Pagination  productsPerPage={productsPerPage} totalPosts={products.length}/>
+    <Pagination  productsPerPage={productsPerPage} totalPosts={products.length} paginate={paginate}/>
 
     
     </>
