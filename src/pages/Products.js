@@ -1,14 +1,15 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from '../context/AppContext';
-import { NavLink, Link, useNavigate} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import "./Products.css";
 import Pagination from "./Pagination.js";
 import { RiShoppingBasket2Line } from "react-icons/ri";
+import toast, { Toaster } from "react-hot-toast";
+
 
 export default function Products() {
-  const navigate = useNavigate();
-  const { products  } = useContext(AppContext);
-  console.log(products.length);
+  const { products, globalAddToCart  } = useContext(AppContext);
+  
   const [ currentPage, setCurrentPage] = useState(1);
  // console.log(currentPage);
   const [ productsPerPage] = useState(10);
@@ -21,8 +22,13 @@ const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
 //change page
 const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+
+
   return (
     <>
+    <Toaster style={{border:"1px solid black",color:"black"}}/>
+
+
     <div className="products-wrapper">
       {currentProducts.map((item) => {
         return (
@@ -42,7 +48,8 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
               {`€ ${item.price}`}
               
             </p>
-            <Link to={"./cart"}>< RiShoppingBasket2Line style ={{fontSize:"2em"}} onClick={() => navigate("/cart")}/></Link>
+            {console.log(item.id)};
+            <button className="chairs-addtocart" onClick={()=>{globalAddToCart(item.id); toast(`you added an item to your cart`)}}>< RiShoppingBasket2Line style ={{fontSize:"2em"}}/></button>
             </div>
           </div>
           </>

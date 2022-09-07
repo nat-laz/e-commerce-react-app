@@ -9,9 +9,6 @@ export default function Login() {
   const navigate = useNavigate();
   const { user, setUser } = useContext(AppContext);
 
-  // if (user) {
-  //   return <Navigate to="/profile" />;
-  // }
 
   const onFinish = (values) => {
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));

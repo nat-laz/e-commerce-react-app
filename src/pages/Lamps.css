@@ -1,11 +1,11 @@
-.Chairs {
+.Lamps {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-.Chairs-box{
+.Lamps-box{
     width: 350px;
     height: 470px;
 /*     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -15,15 +15,8 @@
     
   }
   
-.chairs-title {
+.Lamps-title {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-
-.chairs-addtocart {
-    background-color: transparent;
-    border:none;
-    cursor:pointer
 }

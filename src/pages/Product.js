@@ -6,6 +6,8 @@ import { Carousel } from "antd";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
 import { Rate } from "antd";
 import {v4 as uuid} from 'uuid'
+import toast, { Toaster } from "react-hot-toast";
+
 
 export default function Product() {
   const ref = useRef();
@@ -34,6 +36,7 @@ export default function Product() {
 
   return (
     <div className="Product">
+       <Toaster style={{border:"1px solid black",color:"black"}}/>
       {location.state && (
         <div className="single-product-box">
           <div className="single-product-img-arrows">
@@ -74,7 +77,7 @@ export default function Product() {
               />
               <sup style={{ color: "#5f7470" , marginLeft: "8px"}}>{location.state.rating.count}</sup>
             </div>
-            <button onClick={addToCart}>ADD TO CART</button>
+            <button onClick={()=>{addToCart(); toast("you added an item to your basket")}}>ADD TO CART</button>
             <h3>Description</h3>
             <p>{location.state.description}</p>
           </div>

@@ -7,13 +7,20 @@ const AppContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [products, setProducts] = useState(productArray);
   const [cart, setCart] = useState([]);
-/* 
-  const initialState = {
-    products:[],
-    user: null,
-    cart: [],
-    registeredUsers: JSON.parse(localStorage.getItem("registeredUsers")) || [],
-  }; */
+
+  const globalAddToCart = (id) => {
+   
+    const findedItemCart = cart.find((item) => item.id === id);
+    const newItemToAdd = products.find((item) => item.id === id);
+    if (findedItemCart) {
+    findedItemCart.quantity++;
+    return setCart([...cart]);
+    } else {
+    newItemToAdd.quantity = 1;
+    return setCart([...cart, newItemToAdd]);
+    }
+    };
+
 
   useEffect(()=>{
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
@@ -69,6 +76,7 @@ const AppContextProvider = ({ children }) => {
       deleteItemCart,
       incrementQuantity,
       decrementQuantity,
+      globalAddToCart
     };
    
 
