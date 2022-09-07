@@ -10,6 +10,11 @@ import Profile from "./pages/Profile.js";
 import Cart from "./pages/Cart.js";
 import Login from "./pages/Login.js";
 import Register from "./pages/Register.js";
+import Cataloge from "./pages/Cataloge.js";
+import Chairs from "./pages/Chairs.js";
+import Tables from "./pages/Tables.js";
+import Lamps from "./pages/Lamps.js";
+import Bookcase from "./pages/Bookcase.js";
 
 function App() {
   return (
@@ -26,7 +31,16 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/register" element={<Register />} />
 
-         <Route path="*" element={<NotFound />} /> 
+
+        
+
+        <Route path="/cataloge" element={<Cataloge/>}/>
+        <Route path="/chairs" element={<Chairs/>}/>
+        <Route path="/tables" element={<Tables/>}/>
+        <Route path="/lamps" element={<Lamps/>}/>
+        <Route path="/bookcase" element={<Bookcase/>}/>
+        <Route path="*" element={<NotFound />} />
+
       </Routes>
     </div>
   );
