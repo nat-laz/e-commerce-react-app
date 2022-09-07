@@ -1,31 +1,9 @@
-<<<<<<< HEAD
-
-
-import { useContext } from 'react';
-
-
-
-import 'antd/dist/antd.min.css'; 
-import {
-  Form,
-  Input,
-  Button,
-  Radio,
-  Select,
-  DatePicker,
-  Checkbox,
-  
-} from 'antd';
-import { AppContext } from '../context/AppContext';
-import { useNavigate } from 'react-router-dom';
-=======
 import { useContext } from "react";
 import "antd/dist/antd.min.css";
 import { Form, Input, Button, Radio, Select, DatePicker, Checkbox } from "antd";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
->>>>>>> 9da10f9c5d8d06f6d02285adeea00b8e1872fbe9
 
 const { Option } = Select;
 
