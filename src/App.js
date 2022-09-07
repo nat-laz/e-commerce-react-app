@@ -30,12 +30,17 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/register" element={<Register />} />
+
+
+        
+
         <Route path="/cataloge" element={<Cataloge/>}/>
         <Route path="/chairs" element={<Chairs/>}/>
         <Route path="/tables" element={<Tables/>}/>
         <Route path="/lamps" element={<Lamps/>}/>
         <Route path="/bookcase" element={<Bookcase/>}/>
         <Route path="*" element={<NotFound />} />
+
       </Routes>
     </div>
   );
