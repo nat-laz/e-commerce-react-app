@@ -10,7 +10,7 @@ export default function Navbar() {
     <ul className="Navbar">
       <div className="nav-logo">
         <Link to="/">
-          <img src={require("../images/furniture.png")} alt="" width="150" />
+          <img src={require("../assets/logo/furniture.png")} alt="" width="150" />
         </Link>
       </div>
 

@@ -2,10 +2,9 @@
     display: flex;
     justify-content: space-around;
     list-style: none;
-    
     text-decoration: none;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
 }
 li a{
     color: black;
