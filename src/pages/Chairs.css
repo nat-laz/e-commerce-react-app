@@ -1,0 +1,22 @@
+.Chairs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.Chairs-box{
+    width: 350px;
+    height: 470px;
+/*     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ */    margin: 12px;
+    text-align: center;
+    border-radius: 5px;
+    
+  }
+  
+.chairs-title {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
