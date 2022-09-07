@@ -3,17 +3,39 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { Button, Form, Input } from "antd";
 import "./Login.css";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {
+  const navigate = useNavigate();
+  const { user, setUser } = useContext(AppContext);
 
-const navigate = useNavigate();
-  const { user } = useContext(AppContext);
-  if (user) {
-    return <Navigate to="/profile" />;
-  }
+  // if (user) {
+  //   return <Navigate to="/profile" />;
+  // }
 
   const onFinish = (values) => {
+    const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
+    console.log(registeredUsers);
+    if (!registeredUsers) {
+      return toast.error("PLEASE REGISTER");
+    }
+    if (registeredUsers) {
+      if (registeredUsers.email !== values.email) {
+        console.log("incorect email");
+        return toast.error("INCORRECT E-MAIL");
+      }
+      if (registeredUsers.password !== values.password) {
+        console.log("incorect password");
+        return toast.error("INCORRECT PASSWORD");
+      }
+    }
+    setUser(registeredUsers);
+
     console.log("Success:", values);
+    toast.success("YOU ARE LOG IN");
+    setTimeout(() => {
+      navigate("/");
+    }, 1000);
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -21,9 +43,22 @@ const navigate = useNavigate();
   };
   return (
     <div className="Login">
-
       <div className="LoginForm">
-      <h1>LOG IN</h1>
+        <h1>LOG IN</h1>
+        <Toaster
+          toastOptions={{
+            success: {
+              style: {
+                border: "1px solid", color: 'black',
+              },
+            },
+            error: {
+              style: {
+                border: "1px solid", color: 'black',
+              },
+            },
+          }}
+        />
         <Form
           name="basic"
           labelCol={{
@@ -45,7 +80,7 @@ const navigate = useNavigate();
             rules={[
               {
                 required: true,
-                message: "Please input your E-mail!",
+                message: "Please input your e-mail",
               },
             ]}
           >
@@ -57,13 +92,13 @@ const navigate = useNavigate();
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
+                message: "Please input your password",
               },
             ]}
           >
             <Input.Password />
           </Form.Item>
-          
+
           <Form.Item
             wrapperCol={{
               offset: 8,
@@ -71,7 +106,7 @@ const navigate = useNavigate();
             }}
           >
             <Button type="primary" htmlType="submit">
-              Submit
+              LOG IN
             </Button>
           </Form.Item>
         </Form>
@@ -79,14 +114,14 @@ const navigate = useNavigate();
       <div className="LoginCreateAccount">
         <h1>REGISTER</h1>
         <p>
-          IF YOU STILL DON'T HAVE A ZARA.COM ACCOUNT, USE THIS OPTION TO ACCESS
+          IF YOU STILL DON'T HAVE AN ACCOUNT, USE THIS OPTION TO ACCESS
           THE REGISTRATION FORM.
         </p>
         <p>
-          BY GIVING US YOUR DETAILS, PURCHASING IN ZARA.COM WILL BE FASTER AND
-          AN ENJOYABLE EXPERIENCE.
+          BY GIVING US YOUR DETAILS, PURCHASING WILL BE FASTER AND
+         AN ENJOYABLE EXPERIENCE.
         </p>
-        <button onClick={()=>navigate('/register')}>Create Account</button>
+        <button onClick={() => navigate("/register")}>Create Account</button>
       </div>
     </div>
   );

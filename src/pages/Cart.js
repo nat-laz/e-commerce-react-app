@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import "./Cart.css";
-import { FaRegTrashAlt } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 import { MdRemove } from "react-icons/md";
 import { MdAdd } from "react-icons/md";
 import { v4 as uuid } from "uuid";
@@ -35,7 +35,7 @@ export default function Cart() {
           </div>
           <div className="cart-buttons">
             <div>
-              <FaRegTrashAlt
+              <IoMdClose
                 onClick={() => deleteItemCart(item.id)}
                 className="cart-delete-btn"
               />
@@ -57,9 +57,9 @@ export default function Cart() {
           </div>
         </div>
       ))}
-      <h1>
-        Total <span>{total.toFixed(2)} €</span>
-      </h1>
+      <h2>
+        TOTAL<span>{total.toFixed(2)} €</span>
+      </h2>
       <button className="cart-order-btn">ORDER</button>
     </div>
   );

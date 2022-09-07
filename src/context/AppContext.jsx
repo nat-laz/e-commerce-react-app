@@ -17,7 +17,7 @@ const AppContextProvider = ({ children }) => {
 
   useEffect(()=>{
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
-    console.log(registeredUsers);
+    // console.log(registeredUsers);
     
     if(registeredUsers){
       setUser(registeredUsers);
