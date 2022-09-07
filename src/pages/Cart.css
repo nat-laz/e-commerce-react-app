@@ -53,13 +53,13 @@
   align-items: center;
 }
 .cart-quantity-num {
-  font-size: 1.7em;
-  font-weight: bold;
+  font-size: 1.5em;
+  
 }
 .increment-decrement-btn {
   border: 1px solid gray;
-  width: 42px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   font-size: 1.3em;
   font-weight: bold;
   display: flex;
@@ -68,16 +68,17 @@
   cursor: pointer;
 }
 
-.Cart h1 {
+.Cart h2 {
   width: 60vw;
 }
-.Cart h1 span {
+.Cart h2 span {
   float: right;
 }
 .cart-order-btn {
   background-color: transparent;
-  padding: 12px;
+  padding: 8px;
   font-size: 1.2em;
   width: 150px;
   cursor: pointer;
+  border: 1px solid;
 }
