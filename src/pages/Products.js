@@ -1,10 +1,12 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from '../context/AppContext';
-import { NavLink} from "react-router-dom";
+import { NavLink, Link, useNavigate} from "react-router-dom";
 import "./Products.css";
 import Pagination from "./Pagination.js";
+import { RiShoppingBasket2Line } from "react-icons/ri";
 
 export default function Products() {
+  const navigate = useNavigate();
   const { products  } = useContext(AppContext);
   console.log(products.length);
   const [ currentPage, setCurrentPage] = useState(1);
@@ -40,6 +42,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber);
               {`€ ${item.price}`}
               
             </p>
+            <Link to={"./cart"}>< RiShoppingBasket2Line style ={{fontSize:"2em"}} onClick={() => navigate("/cart")}/></Link>
             </div>
           </div>
           </>
