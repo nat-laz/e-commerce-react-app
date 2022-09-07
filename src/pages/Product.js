@@ -5,6 +5,7 @@ import "./Product.css";
 import { Carousel } from "antd";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
 import { Rate } from "antd";
+import {v4 as uuid} from 'uuid'
 
 export default function Product() {
   const ref = useRef();
@@ -51,7 +52,7 @@ export default function Product() {
               >
                 <img src={location.state.image} alt="" width={200} />
                 {location.state.images.map(item=>
-                   <img src={item} alt="" width={200} />
+                  <img key={uuid()} src={item} alt="" width={200} />
                 )}
               </Carousel>
             </div>
