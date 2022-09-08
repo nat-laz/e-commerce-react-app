@@ -5,6 +5,14 @@
     margin: 0;
     padding: 0;
 }
+
+#root{
+    position:relative;
+    min-height: 100vh;
+
+}
+
 body{
     font-family: 'Abel', sans-serif;
+    position: relative;
 }

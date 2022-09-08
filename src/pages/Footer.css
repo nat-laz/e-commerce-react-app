@@ -5,8 +5,11 @@
     justify-content: space-around;
     height:300px;
     align-items: center;
-    position: sticky;
     margin-top: 20px;
+    left:0;
+    right:0;
+    bottom: 0;
+    position: absolute;
 
 }
 

@@ -24,6 +24,7 @@ import "./App.css"
 
 function App() {
   return (
+    <>
     <div className="App">
       <Navbar />
 
@@ -46,8 +47,10 @@ function App() {
         <Route path="*" element={<NotFound />} />
 
       </Routes>
-      <Footer/>
+     
     </div>
+     <Footer/>
+     </>
   );
 }
 
