@@ -72,7 +72,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Carousel renderArrow={myArrow} breakPoints={breakPoints}>
+        <Carousel renderArrow={myArrow} breakPoints={breakPoints} style={{paddingBottom: "35px"}}>
           {shuffledProds.map((item) => {
             return (
               <div className="products-box ">

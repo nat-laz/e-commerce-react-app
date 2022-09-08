@@ -19,38 +19,38 @@ import Bookcase from "./pages/Bookcase.js";
 import Footer from "./pages/Footer.js";
 
 import About from "./pages/About.js";
-import "./App.css"
-
+import "./App.css";
 
 function App() {
   return (
     <>
-    <div className="App">
-      <Navbar />
+      <div className="App">
+        <div className="main">
+          <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<Product />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/cataloge" element={<Cataloge/>}/>
-        <Route path="/chairs" element={<Chairs/>}/>
-        <Route path="/tables" element={<Tables/>}/>
-        <Route path="/lamps" element={<Lamps/>}/>
-        <Route path="/bookcase" element={<Bookcase/>}/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<Product />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/cataloge" element={<Cataloge />} />
+            <Route path="/chairs" element={<Chairs />} />
+            <Route path="/tables" element={<Tables />} />
+            <Route path="/lamps" element={<Lamps />} />
+            <Route path="/bookcase" element={<Bookcase />} />
 
-        <Route path="*" element={<NotFound />} />
-
-      </Routes>
-     
-    </div>
-     <Footer/>
-     </>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
