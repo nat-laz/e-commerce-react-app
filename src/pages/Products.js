@@ -53,7 +53,6 @@ export default function Products() {
            <Meta style={{marginLeft: "-23px", padding: "5px"}} title={item.title}/>
                 <button
                     className={`chairs-addtocart product-price`}
-                    // id="product-price"
                     onClick={() => {
                       globalAddToCart(item.id);
                       toast(`ITEM WAS ADDED TO YOUR CART`);
