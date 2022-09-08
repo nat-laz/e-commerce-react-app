@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {
   const navigate = useNavigate();
-  const { user, setUser } = useContext(AppContext);
+  const { setUser } = useContext(AppContext);
 
 
   const onFinish = (values) => {
