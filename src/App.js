@@ -15,8 +15,12 @@ import Chairs from "./pages/Chairs.js";
 import Tables from "./pages/Tables.js";
 import Lamps from "./pages/Lamps.js";
 import Bookcase from "./pages/Bookcase.js";
+
+import Footer from "./pages/Footer.js";
+
 import About from "./pages/About.js";
 import "./App.css"
+
 
 function App() {
   return (
@@ -42,6 +46,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
 
       </Routes>
+      <Footer/>
     </div>
   );
 }

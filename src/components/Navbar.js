@@ -7,7 +7,7 @@ import "./Navbar.css";
 export default function Navbar() {
   const { cart, user } = useContext(AppContext);
   return (
-    <ul className="Navbar">
+    <div className="Navbar">
       <div className="nav-logo">
         <Link to="/">
           <img src={require("../assets/logo/furniture.png")} alt="" width="150" />
@@ -49,6 +49,6 @@ export default function Navbar() {
           </Link>
         </li>
       </div>
-    </ul>
+    </div>
   );
 }
