@@ -16,18 +16,18 @@ export default function Navbar() {
 
       <div className="nav-links">
         <li>
-          <Link to="/about">about</Link>
+          <Link to="/about">ABOUT</Link>
         </li>
 
         <li>
-          <Link to="/cataloge">cataloge</Link>
+          <Link to="/cataloge">CATALOGUE</Link>
         </li>
         <li>
-          <Link to="/products">products</Link>
+          <Link to="/products">PRODUCTS</Link>
         </li>
 
         <li>
-          <Link to="/contactus">contact</Link>
+          <Link to="/contactus">CONTACT</Link>
         </li>
       </div>
 
