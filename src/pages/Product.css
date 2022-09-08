@@ -4,7 +4,7 @@
   align-items: center;
   max-width: 70vw;
   margin: 0 auto;
-  /* max-height: 50vh; */
+  padding-bottom: 75px;
 }
 .single-product-box {
   width: 80vw;
