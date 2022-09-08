@@ -1,0 +1,61 @@
+.footer {
+    background-color: rgb(247, 236, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:300px;
+    align-items: center;
+    position: sticky;
+    margin-top: 20px;
+
+}
+
+.titles {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.listing {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 260px;
+    justify-content: space-around;
+   
+
+}
+
+.logos-box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.listing2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+
+.listing .logos2{
+    font-size: 2rem;
+   
+}
+
+.ReservedRights{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+.Cont_SocialMedia_foot{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+}
