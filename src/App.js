@@ -15,7 +15,12 @@ import Chairs from "./pages/Chairs.js";
 import Tables from "./pages/Tables.js";
 import Lamps from "./pages/Lamps.js";
 import Bookcase from "./pages/Bookcase.js";
+
 import Footer from "./pages/Footer.js";
+
+import About from "./pages/About.js";
+import "./App.css"
+
 
 function App() {
   return (
@@ -30,12 +35,14 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cataloge" element={<Cataloge/>}/>
         <Route path="/chairs" element={<Chairs/>}/>
         <Route path="/tables" element={<Tables/>}/>
         <Route path="/lamps" element={<Lamps/>}/>
         <Route path="/bookcase" element={<Bookcase/>}/>
+
         <Route path="*" element={<NotFound />} />
 
       </Routes>

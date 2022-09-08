@@ -1,3 +1,4 @@
+
 import React, { useContext} from "react";
 import "./Home.css"; 
 import { NavLink , useNavigate} from "react-router-dom";
@@ -5,7 +6,7 @@ import { AppContext } from "../context/AppContext";
 import Carousel, {consts} from "react-elastic-carousel";
 import { Card } from "antd";
 const { Meta } = Card;
-
+import {v4 as uuid} from "uuid"
 
 
 export default function Home() {
@@ -51,6 +52,20 @@ function myArrow({ type, onClick, isEdge }) {
   return (
     <>
     <div className="container">
+    <div className="firstBanner">
+    </div>
+    <Carousel breakPoints={breakPoints}>
+      {shuffledProds.map((item) => {
+      return (
+        <div key={uuid()} className="carousel-item">
+          <img id="carousel-img" src={item.image} alt="" width="500" />
+        </div>
+      )})
+    }
+    
+   
+    </Carousel>
+
       
       <div className="Landing-section1" >
       
