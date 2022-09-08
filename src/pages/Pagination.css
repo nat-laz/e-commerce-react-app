@@ -1,19 +1,16 @@
 .Numero {
-    font-size:3rem; 
-    width: 60px;
-    height:60px;
-    display: flex;
-    justify-content: center;
-    padding:5px;
-    border:3px solid transparent;
+  font-size: 2em;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .Numero:hover {
-    border:3px solid rgba(33, 68, 69, 0.285);
-    width: 60px;
-    height:60px;   
-}
-
-p{
-    line-height:40px;
+  border: 1px solid rgba(33, 68, 69, 0.285);
+  width: 60px;
+  height: 60px;
 }

@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import "./Home.css";
 import {AppContext} from '../context/AppContext';
 import  Carousel  from "react-elastic-carousel";
+import {v4 as uuid} from "uuid"
 
 export default function Home() {
   const {products} = useContext(AppContext);
@@ -42,7 +43,7 @@ const breakPoints = [
     <Carousel breakPoints={breakPoints}>
       {shuffledProds.map((item) => {
       return (
-        <div className="carousel-item">
+        <div key={uuid()} className="carousel-item">
           <img id="carousel-img" src={item.image} alt="" width="500" />
         </div>
       )})
