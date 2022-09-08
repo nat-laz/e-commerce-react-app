@@ -49,9 +49,9 @@ export default function Cart() {
                 <MdRemove />
               </button>
               <div className="cart-quantity-num">{item.quantity}</div>
-              <div className="increment-decrement-btn">
+              <div className="increment-decrement-btn" onClick={() => incrementQuantity(item)}>
                 {" "}
-                <MdAdd onClick={() => incrementQuantity(item)} />
+                <MdAdd />
               </div>
             </div>
           </div>

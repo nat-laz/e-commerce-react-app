@@ -13,16 +13,7 @@ export default function Product() {
   const ref = useRef();
   const location = useLocation();
   const { setCart, cart } = useContext(AppContext);
-  // const { id } = useParams();
-  // const singleProduct = products.find((item) => item.id === +id); //used "+" to convert in number
-  // // // console.log(id);
-  // // const [product, setProduct] = useState({});
 
-  // // useEffect(() => {
-  // //   const singleProduct = products.find((item) => item.id === +id); //used "+" to convert in number
-  // //   setProduct(singleProduct);
-  // // }, []);
-  // // //  console.log(product)
   const addToCart = () => {
     const findedItem = cart.find((item) => item.id === location.state.id);
     if (findedItem) {
