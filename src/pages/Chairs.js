@@ -36,13 +36,13 @@ const Chairs = () => {
            <Meta style={{marginLeft: "-23px", padding: "5px"}} title={item.title}/>
                 <button
                     className={`chairs-addtocart product-price`}
-                    // id="product-price"
+  
                     onClick={() => {
                       globalAddToCart(item.id);
                       toast(`ITEM WAS ADDED TO YOUR CART`);
                     }}>
                      <span> {`€${item.price}`}</span>
-                    <RiShoppingBasket2Line style={{ fontSize: "1.6em" }} />
+                    <RiShoppingBasket2Line style={{ fontSize: "1.6em" }} className="products-btn"/>
                 </button>
                 </div>
               </Card>

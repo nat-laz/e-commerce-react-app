@@ -39,7 +39,8 @@ export default function Products() {
                 bordered={false}
                 style={{ width: 350}}
                 cover={
-                  <NavLink to={`/products/${item.id}`} state={item}>
+                  <NavLink to={`/products/${item.id}`} state={item} >
+          
                   <img
                     className="products-img"
                     src={item.image}
@@ -54,6 +55,7 @@ export default function Products() {
                 <button
                     className={`chairs-addtocart product-price`}
                     onClick={() => {
+                      
                       globalAddToCart(item.id);
                       toast(`ITEM WAS ADDED TO YOUR CART`);
                     }}>
