@@ -5,12 +5,20 @@ import {IoLogoTwitter} from 'react-icons/io';
 import {IoLogoFacebook} from 'react-icons/io';
 import {IoLogoPinterest} from 'react-icons/io';
 import {IoLogoInstagram} from 'react-icons/io';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 
 
 export default function Footer() {
   const navigate = useNavigate();
+
+
+  const scrolltoTop = (path) => {
+  
+    window.scrollTo(0, 0);
+    navigate (path);
+  }
+
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -102,13 +110,19 @@ export default function Footer() {
 
           <p>
               
-                <p onClick={()=>navigate("/")} style={{cursor:"pointer"}}  className='titles listing2'>Home</p>
-              
-             
-                <h2 className='titles listing2'>Catalogue</h2>
-              
-              <h2 className='titles listing2'>Cart</h2>
-              
+                <p onClick={()=>scrolltoTop("/")} style={{cursor:"pointer"}}  className='titles listing2'>Home</p>
+                <p onClick={()=>scrolltoTop("/cataloge")} style={{cursor:"pointer"}} className='titles listing2'>Catalogue</p>
+                <p onClick={()=>scrolltoTop("/cart")} style={{cursor:"pointer"}} className='titles listing2'>Cart</p>
+                
+                
+          </p>
+
+          <p className="shopByCate" >
+                <p ><b>Shop by Category</b></p>
+                <p onClick={()=>scrolltoTop("/chairs")} style={{cursor:"pointer"}} className='titles listing2'>Modern Chairs</p>
+                <p onClick={()=>scrolltoTop("/tables")} style={{cursor:"pointer"}} className='titles listing2'>Fancy Dinning Tables</p>
+                <p onClick={()=>scrolltoTop("/bookcase")} style={{cursor:"pointer"}} className='titles listing2'>Stylish Bookcases</p>
+                <p onClick={()=>scrolltoTop("/lamps")} style={{cursor:"pointer"}} className='titles listing2'>Scultural Lamps</p>
           </p>
           <p className='logos-box'>
           
