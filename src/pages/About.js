@@ -1,8 +1,11 @@
-import "./About.css"
+import "../style/About.css"
 
 const About = () => {
   return (
+    <>
+    <div id="aboutCorner"></div>
     <div className='About'>
+      
       
       <div className="about-content">
         <div className="about-text">
@@ -38,6 +41,7 @@ const About = () => {
        </div>
       </div>
     </div>
+    </>
   )
 }
 

@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import React from "react";
-import Navbar from "./components/Navbar.js";
-import ContactUs from "./pages/ContactUs.js";
+import React,{ useContext } from "react";
+import { Link } from "react-router-dom";
+import { RiShoppingCartLine } from "react-icons/ri";
+import "./style/Navbar.css";
 import NotFound from "./pages/NotFound.js";
 import Product from "./pages/Product.js";
 import Products from "./pages/Products.js";
@@ -15,22 +16,63 @@ import Chairs from "./pages/Chairs.js";
 import Tables from "./pages/Tables.js";
 import Lamps from "./pages/Lamps.js";
 import Bookcase from "./pages/Bookcase.js";
-
+import { AppContext } from "./context/AppContext";
 import Footer from "./pages/Footer.js";
-
 import About from "./pages/About.js";
 import "./App.css";
 
 function App() {
+  const { cart, user } = useContext(AppContext);
   return (
     <>
       <div className="App">
         <div className="main">
-          <Navbar />
+        <div className="Navbar">
+      <div className="nav-logo">
+        <Link to="/">
+          <img src={require("./assets/logo/furniture.png")} alt="" width="150" />
+        </Link>
+      </div>
+
+      <div className="nav-links">
+        <li>
+          <Link to="/about">ABOUT</Link>
+        </li>
+
+        <li>
+          <Link to="/cataloge" >CATALOGUE</Link>
+        </li>
+        <li>
+          <Link to="/products">PRODUCTS</Link>
+        </li>
+
+        <li>
+          <a href="#contactme">CONTACT</a>
+        </li>
+      </div>
+
+      <div className="nav-log-cart">
+        {user ? (
+          <li>
+            <Link to="/profile">{user.firstName.toUpperCase()}</Link>
+          </li>
+        ) : (
+          <>
+            <li>
+              <Link to="/login">LOG IN</Link>
+            </li>
+          </>
+        )}
+        <li>
+          <Link to="/cart">
+            <RiShoppingCartLine /> <sup>{cart.length}</sup>
+          </Link>
+        </li>
+      </div>
+    </div>
 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/" element={<Home />} /> 
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<Product />} />
             <Route path="/profile" element={<Profile />} />
@@ -48,7 +90,10 @@ function App() {
           </Routes>
           
         </div>
-        <Footer />
+
+        <div id="contactme">
+          <Footer />
+        </div>
       </div>
     </>
   );
