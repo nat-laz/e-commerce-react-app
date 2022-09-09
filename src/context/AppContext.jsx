@@ -8,9 +8,7 @@ const AppContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [products, setProducts] = useState(productArray);
   const [cart, setCart] = useState([]);
-  const [toggle, setToggle] = useState(true);
-  const [wishlist, setWishlist] = useState([])
-  
+  const [wishlist, setWishlist] = useState([]);
 
   const globalAddToCart = (id) => {
     const findedItemCart = cart.find((item) => item.id === id);
@@ -27,23 +25,21 @@ const AppContextProvider = ({ children }) => {
   useEffect(() => {
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
     // console.log(registeredUsers);
-if (registeredUsers) {
+    if (registeredUsers) {
       setUser(registeredUsers);
     }
   }, []);
   //_____________________________________________________________________________________________
   //Wishlist Functionality
-  const handleToggle = ()=>{
-    setToggle(!toggle)
-  }
+
   const globalAddToWishlist = (id) => {
     const findedItemCart = wishlist.find((item) => item.id === id);
+    console.log(id);
     const newItemToAdd = products.find((item) => item.id === id);
     if (findedItemCart) {
-      findedItemCart.quantity++;
-      return setWishlist([...wishlist]);
+      const filteredWishlist = wishlist.filter((item) => item.id !== id);
+      return setWishlist(filteredWishlist);
     } else {
-      newItemToAdd.quantity = 1;
       return setWishlist([...wishlist, newItemToAdd]);
     }
   };
@@ -95,11 +91,9 @@ if (registeredUsers) {
     incrementQuantity,
     decrementQuantity,
     globalAddToCart,
-    toggle,
-    handleToggle,
     globalAddToWishlist,
     wishlist,
-    deleteItemWishlist
+    deleteItemWishlist,
   };
 
   return (

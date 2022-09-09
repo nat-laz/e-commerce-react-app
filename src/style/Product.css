@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 3em auto;
   padding-bottom: 75px;
 }
 .single-product-box {
@@ -26,6 +26,7 @@
   width: 75%;
   cursor: pointer;
   object-fit: cover;
+  position: relative;
 }
 
 .single-page-details {

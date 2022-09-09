@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 import "../style/Login.css";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {
   const navigate = useNavigate();
   const { setUser } = useContext(AppContext);
-
 
   const onFinish = (values) => {
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers"));
@@ -18,17 +17,13 @@ export default function Login() {
     }
     if (registeredUsers) {
       if (registeredUsers.email !== values.email) {
-        console.log("incorect email");
         return toast.error("INCORRECT E-MAIL");
       }
       if (registeredUsers.password !== values.password) {
-        console.log("incorect password");
         return toast.error("INCORRECT PASSWORD");
       }
     }
     setUser(registeredUsers);
-
-    console.log("Success:", values);
     toast.success("YOU ARE LOG IN");
     setTimeout(() => {
       navigate("/");
@@ -41,17 +36,21 @@ export default function Login() {
   return (
     <div className="Login">
       <div className="LoginForm">
-        <h1>LOG IN</h1>
+        <h2>LOG IN</h2>
         <Toaster
           toastOptions={{
             success: {
               style: {
-                border: "1px solid", color: 'black',
+                border: "1px solid",
+                color: "black",
+                padding: "15px",
               },
             },
             error: {
               style: {
-                border: "1px solid", color: 'black',
+                border: "1px solid",
+                color: "black",
+                padding: "15px",
               },
             },
           }}
@@ -72,8 +71,7 @@ export default function Login() {
           autoComplete="off"
         >
           <Form.Item
-            label="E-mail"
-            name="email"
+            label="EMAIL"
             rules={[
               {
                 required: true,
@@ -84,8 +82,7 @@ export default function Login() {
             <Input />
           </Form.Item>
           <Form.Item
-            label="Password"
-            name="password"
+            label="PASSWORD"
             rules={[
               {
                 required: true,
@@ -102,23 +99,25 @@ export default function Login() {
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit">
-              LOG IN
-            </Button>
+            <button className="login-btn log" htmlType="submit"> 
+              LOG IN</button>
+            
           </Form.Item>
         </Form>
       </div>
       <div className="LoginCreateAccount">
-        <h1>REGISTER</h1>
+        <h2>REGISTER</h2>
         <p>
-          IF YOU STILL DON'T HAVE AN ACCOUNT, USE THIS OPTION TO ACCESS
-          THE REGISTRATION FORM.
+          IF YOU STILL DON'T HAVE AN ACCOUNT, USE THIS OPTION TO ACCESS THE
+          REGISTRATION FORM.
         </p>
         <p>
-          BY GIVING US YOUR DETAILS, PURCHASING WILL BE FASTER AND
-         AN ENJOYABLE EXPERIENCE.
+          BY GIVING US YOUR DETAILS, PURCHASING WILL BE FASTER AND AN ENJOYABLE
+          EXPERIENCE.
         </p>
-        <button onClick={() => navigate("/register")}>Create Account</button>
+        <button className="login-btn create" onClick={() => navigate("/register")}>
+          CREATE ACCOUNT
+        </button>
       </div>
     </div>
   );

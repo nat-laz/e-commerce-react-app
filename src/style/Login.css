@@ -1,12 +1,37 @@
 .Login {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 80vw;
+  margin: 3em auto;
+  display: flex;
 }
 
 .LoginForm {
-    width:300px;
+  width: 30%;
+}
+.LoginForm h2 {
+  padding-left: 1.6em;
 }
 .LoginCreateAccount {
-    width:500px;
+  width: 60%;
+  padding-left: 12em;
+}
+.login-btn {
+ background-color: transparent;
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2.5em;
+  cursor: pointer;
+  
+}
+.log {
+  width: 100%;
+  margin-top: 2.9em;
+}
+.LoginCreateAccount p {
+  width: 32em;
+  
+}
+.create {
+  width: 42%;
 }

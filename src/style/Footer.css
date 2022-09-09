@@ -22,14 +22,11 @@
 }
 
 .contactUsForm {
-
   position: absolute;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-
 }
 
 .titles {
@@ -62,8 +59,8 @@
 
 .listing .logos2 {
   font-size: 2rem;
+  cursor: pointer;
 }
-
 
 .ReservedRights {
   font-size: 0.8rem;
@@ -72,34 +69,39 @@
   position: relative;
   top: 60px;
 }
-.ReservedRights{
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-    position:relative;
-    top: 80px;
+.ReservedRights {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 80px;
 }
-.Cont_SocialMedia_foot{
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    position:relative;
-    top: 180px;
-    
-
+.Cont_SocialMedia_foot {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  position: relative;
+  top: 180px;
 }
 
 .contactUsForm {
-    background-color:rgb(221,221,221);
-    height:230px;
-    width: 100%;
-    position:absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(221, 221, 221);
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 8em;
 }
-
+.contactus-message{
+  width: 40%;
+}
+.contactus-message p{
+   width: 25em;
+   margin: 0em;
+}
 .shopByCate {
-    display:inline-block;
-    height:10px}
-
+  display: inline-block;
+  height: 10px;
+}

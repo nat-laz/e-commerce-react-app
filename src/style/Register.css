@@ -1,0 +1,18 @@
+.Registration {
+  width: 80vw;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  
+}
+.Registration button {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 8px 25px;
+  width: 51em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+   margin-left: 10em;
+}
