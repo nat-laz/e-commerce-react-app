@@ -1,8 +1,9 @@
-import "./About.css"
+import "../style/About.css"
 
 const About = () => {
   return (
     <div className='About'>
+      <div id="about"></div>
       
       <div className="about-content">
         <div className="about-text">

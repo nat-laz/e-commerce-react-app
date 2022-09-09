@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Home.css";
+import "../style/Home.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import Carousel, { consts } from "react-elastic-carousel";
@@ -58,10 +58,11 @@ export default function Home() {
 
   return (
     <>
+    <div id="bub"></div>
       <div className="container">
-        <div className="firstBanner"></div>
+       
 
-        <div className="Landing-section1">
+        <div  className="Landing-section1" >
           <div className="BannerLandingLeft"></div>
           <div className="BannerLandingRight">
             <div className="Inset">

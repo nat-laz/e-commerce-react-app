@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
-import "./Cart.css";
+import "../style/Cart.css";
 import { IoMdClose } from "react-icons/io";
 import { MdRemove } from "react-icons/md";
 import { MdAdd } from "react-icons/md";
