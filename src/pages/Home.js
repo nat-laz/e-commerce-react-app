@@ -53,56 +53,56 @@ export default function Home() {
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
     { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4},
+    { width: 1200, itemsToShow: 4 },
   ];
 
   return (
-    
-    
-      <div className="container">
-       
-
-        <div  className="Landing-section1" >
-          <div className="BannerLandingLeft"></div>
-          <div className="BannerLandingRight">
-            <div className="Inset">
-              <p className="greetings">Good to see you</p>
-              <button onClick={() => navigate("./products")} id="ShopAll">
-                SHOP BACK IN STOCK
-              </button>
-            </div>
+    <div className="container">
+      <div className="Landing-section1">
+        <div className="BannerLandingLeft"></div>
+        <div className="BannerLandingRight">
+          <div className="Inset">
+            <p className="greetings">Good to see you</p>
+            <button onClick={() => navigate("./products")} id="ShopAll">
+              SHOP BACK IN STOCK
+            </button>
           </div>
         </div>
-        <Carousel renderArrow={myArrow} breakPoints={breakPoints} style={{paddingBottom: "35px"}}>
-          {shuffledProds.map((item) => {
-            return (
-              <div className="products-box ">
-                <NavLink to={`/products/${item.id}`} state={item}>
-                  <Card
-                    id="home-carousel-card"
-                    bordered={false}
-                    hoverable
-                    style={{
-                      width: 300,
-                      
-                    }}
-                    cover={
-                      <img
-                        className="products-img"
-                        width={250}
-                        alt="example"
-                        src={item.image}
-                      />
-                    }
-                  >
-                    <Meta title={item.title} description={`€${item.price}`} />
-                  </Card>
-                </NavLink>
-              </div>
-            );
-          })}
-        </Carousel>
       </div>
-    
+      <Carousel
+        renderArrow={myArrow}
+        breakPoints={breakPoints}
+        style={{ paddingBottom: "35px" }}
+      >
+        {shuffledProds.map((item) => {
+          return (
+            <div key={item.id} className="products-box ">
+              <Card
+                id="home-carousel-card"
+                size="small"
+                bordered={false}
+                hoverable
+                style={{
+                  width: 350,
+                }}
+                
+                cover={
+                  <NavLink to={`/products/${item.id}`} state={item}>
+                    <img
+                      className="products-img"
+                      src={item.image}
+                      width={300}
+                      alt=""
+                    />
+                  </NavLink>
+                }
+              >
+                <Meta title={item.title} description={`€${item.price}`} />
+              </Card>
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
   );
 }

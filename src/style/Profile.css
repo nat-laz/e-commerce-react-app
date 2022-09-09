@@ -1,0 +1,27 @@
+.Profile {
+  width: 80vw;
+  margin: 3em auto;
+  display: flex;
+  padding-bottom: 45px;
+}
+
+.profile-info {
+  width: 30%;
+}
+.profile-info h4 {
+  margin: 0em;
+  font-weight: bold;
+}
+.profile-info button {
+  background-color: transparent;
+  border: 1px solid;
+  width: 68%;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wishlist-wrapper{
+    width: 70%;
+}

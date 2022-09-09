@@ -4,12 +4,19 @@ import { NavLink } from "react-router-dom";
 import "../style/Products.css";
 import Pagination from "./Pagination.js";
 import { RiShoppingBasket2Line } from "react-icons/ri";
+import { IoMdHeartEmpty, IoMdHeart } from "react-icons/io";
 import toast, { Toaster } from "react-hot-toast";
 import { Card } from "antd";
 const { Meta } = Card;
 
 export default function Products() {
-  const { products, globalAddToCart } = useContext(AppContext);
+  const {
+    products,
+    globalAddToCart,
+    toggle,
+    handleToggle,
+    globalAddToWishlist,
+  } = useContext(AppContext);
 
   const [currentPage, setCurrentPage] = useState(1);
   // console.log(currentPage);
@@ -28,40 +35,60 @@ export default function Products() {
 
   return (
     <>
-      <Toaster style={{ border: "1px solid black", color: "black", padding: "12px" }} />
+      <Toaster
+        style={{ border: "1px solid black", color: "black", padding: "12px" }}
+      />
 
       <div className="products-wrapper">
         {currentProducts.map((item) => {
           return (
             <div className="products-box " key={item.id}>
+              <div className="wishlist-btn">
+                {toggle ? (
+                  <IoMdHeartEmpty
+                    onClick={() => {
+                      handleToggle();
+                      globalAddToWishlist(item.id);
+                      toast(`ITEM WAS ADDED TO YOUR WISHLIST`);
+                    }}
+                  />
+                ) : (
+                  <IoMdHeart onClick={handleToggle} />
+                )}
+              </div>
               <Card
                 hoverable
                 bordered={false}
-                style={{ width: 350}}
+                style={{ width: 350 }}
                 cover={
-                  <NavLink to={`/products/${item.id}`} state={item} >
-          
-                  <img
-                    className="products-img"
-                    src={item.image}
-                    width={300}
-                    alt=""
-                  />
-                </NavLink>
+                  <NavLink to={`/products/${item.id}`} state={item}>
+                    <img
+                      className="products-img"
+                      src={item.image}
+                      width={300}
+                      alt=""
+                    />
+                  </NavLink>
                 }
               >
-           <div className="products-details">     
-           <Meta style={{marginLeft: "-23px", padding: "5px"}} title={item.title}/>
-                <button
+                <div className="products-details">
+                  <Meta
+                    style={{ marginLeft: "-23px", padding: "5px" }}
+                    title={item.title}
+                  />
+                  <button
                     className={`chairs-addtocart product-price`}
                     onClick={() => {
-                      
                       globalAddToCart(item.id);
                       toast(`ITEM WAS ADDED TO YOUR CART`);
-                    }}>
-                     <span> {`€${item.price}`}</span>
-                    <RiShoppingBasket2Line style={{ fontSize: "1.6em" }} className="products-btn" />
-                </button>
+                    }}
+                  >
+                    <span> {`€${item.price}`}</span>
+                    <RiShoppingBasket2Line
+                      style={{ fontSize: "1.6em" }}
+                      className="products-btn"
+                    />
+                  </button>
                 </div>
               </Card>
             </div>
