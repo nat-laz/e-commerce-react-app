@@ -1,98 +1,84 @@
 .footer {
-    background-color:rgb(204,204,204);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 500px;
-    align-items: center;
-    margin-top: 20px;
-    position: absolute;
-    bottom: -230px;
-    width: 100vw;
-    
-
+  background-color: rgb(204, 204, 204);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: -230px;
+  width: 100vw;
 }
 .common {
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-radius: 4px;
-    width: 400px;
-    
-  }
-
-  
-
-
-.common::placeholder { opacity: 1; }
-
-.contactUsForm {
-    position:absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  width: 400px;
 }
 
+.common::placeholder {
+  opacity: 1;
+}
 
+.contactUsForm {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
 
 .titles {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .listing {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 260px;
-    justify-content: space-around;
-   
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 260px;
+  justify-content: space-around;
 }
 
-.logos-box{
-    display: flex;
-    text-align: center;
-    align-items: center;
+.logos-box {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .listing2 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-.listing .logos2{
-    font-size: 2rem;
-   
+.listing .logos2 {
+  font-size: 2rem;
 }
 
-.ReservedRights{
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-    position:relative;
-    top: 60px;
+.ReservedRights {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 60px;
 }
-.Cont_SocialMedia_foot{
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    position:relative;
-    top: 240px;
-    
-
+.Cont_SocialMedia_foot {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  position: relative;
+  top: 240px;
 }
 
 .contactUsForm {
-    background-color:rgb(221,221,221);
-    height:300px;
-    width: 100%;
+  background-color: rgb(221, 221, 221);
+  height: 300px;
+  width: 100%;
 }

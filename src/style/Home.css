@@ -1,14 +1,12 @@
 .BannerLandingLeft {
-    margin-left:0px;
-    background-image:url("../assets/background/croppedBack.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
+  margin-left: 0px;
+  background-image: url("../assets/background/croppedBack.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
-
-
 
 .container {
   display: flex;
@@ -18,8 +16,8 @@
   width: 100%;
   min-height: 100vh;
 }
-#home-carousel-card{
-    height: 250px;
+#home-carousel-card {
+  margin: 0 20px;
 }
 .rec.rec-arrow {
   border-radius: 0;
@@ -58,7 +56,7 @@ button.rec-dot:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:rgb(187,187,187);
+  background-color: rgb(187, 187, 187);
   font-size: 2rem;
   color: black;
   height: 100%;
@@ -69,7 +67,7 @@ button.rec-dot:focus {
   border-radius: 30px;
   height: 90%;
   width: 90%;
-  background-color: rgb(238,238,238);
+  background-color: rgb(238, 238, 238);
   display: flex;
   flex-direction: column;
   align-items: center;
