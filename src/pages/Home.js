@@ -57,8 +57,8 @@ export default function Home() {
   ];
 
   return (
-    <>
-    <div id="homeCorner"></div>
+    
+    
       <div className="container">
        
 
@@ -103,6 +103,6 @@ export default function Home() {
           })}
         </Carousel>
       </div>
-    </>
+    
   );
 }

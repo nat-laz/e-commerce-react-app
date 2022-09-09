@@ -5,10 +5,12 @@ import {IoLogoTwitter} from 'react-icons/io';
 import {IoLogoFacebook} from 'react-icons/io';
 import {IoLogoPinterest} from 'react-icons/io';
 import {IoLogoInstagram} from 'react-icons/io';
-import { HashLink as Link } from "react-router-hash-link";
+import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Footer() {
+  const navigate = useNavigate();
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -99,13 +101,13 @@ export default function Footer() {
           </p>
 
           <p>
-              <Link to="#homeCorner">
-                <h2 >Home</h2>
-              </Link>
-             
-                <h2 className='titles listing2'>About Us</h2>
               
-              <h2 className='titles listing2'>Contact Us</h2>
+                <p onClick={()=>navigate("/")} style={{cursor:"pointer"}}  className='titles listing2'>Home</p>
+              
+             
+                <h2 className='titles listing2'>Catalogue</h2>
+              
+              <h2 className='titles listing2'>Cart</h2>
               
           </p>
           <p className='logos-box'>
