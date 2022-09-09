@@ -11,7 +11,7 @@ const Bookcase = () => {
   const { products, globalAddToCart  } = useContext(AppContext);
   
 
-  const bookcase = products.filter((item) => item.category === "bookcase");
+  const bookcase = products.filter((item) => item.category === "Bookcase");
   return (
     
     <div className="products-wrapper">
@@ -44,7 +44,7 @@ const Bookcase = () => {
                       toast(`ITEM WAS ADDED TO YOUR CART`);
                     }}>
                      <span> {`€${item.price}`}</span>
-                    <RiShoppingBasket2Line style={{ fontSize: "1.6em" }} />
+                    <RiShoppingBasket2Line style={{ fontSize: "1.6em" }} className="products-btn"/>
                 </button>
                 </div>
               </Card>

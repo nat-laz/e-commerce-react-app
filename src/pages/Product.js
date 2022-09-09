@@ -68,7 +68,7 @@ export default function Product() {
               />
               <sup style={{ color: "#5f7470" , marginLeft: "8px"}}>{location.state.rating.count}</sup>
             </div>
-            <button onClick={()=>{addToCart(); toast("you added an item to your basket")}}>ADD TO CART</button>
+            <button onClick={()=>{addToCart(); toast(`ITEM WAS ADDED TO YOUR CART`)}}>ADD TO CART</button>
             <h3>Description</h3>
             <p>{location.state.description}</p>
           </div>
