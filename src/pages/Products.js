@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../context/AppContext";
 import { NavLink } from "react-router-dom";
-import "./Products.css";
+import "../style/Products.css";
 import Pagination from "./Pagination.js";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import toast, { Toaster } from "react-hot-toast";

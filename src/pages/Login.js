@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { Button, Form, Input } from "antd";
-import "./Login.css";
+import "../style/Login.css";
 import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {

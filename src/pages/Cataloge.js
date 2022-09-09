@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./Cataloge.css"
+import "../style/Cataloge.css"
 
 const Cataloge = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pagination.css";
+import "../style/Pagination.css";
 import { v4 as uuid } from "uuid";
 
 export default function Pagination({ productsPerPage, totalPosts, paginate }) {

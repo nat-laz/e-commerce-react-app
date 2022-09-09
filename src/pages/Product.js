@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
-import "./Product.css";
+import "../style/Product.css";
 import { Carousel } from "antd";
 import { VscArrowRight, VscArrowLeft } from "react-icons/vsc";
 import { Rate } from "antd";
