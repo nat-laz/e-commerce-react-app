@@ -102,9 +102,9 @@ export default function Footer() {
               <Link to="#homeCorner">
                 <h2 >Home</h2>
               </Link>
-              <Link to="#aboutCorner">
+             
                 <h2 className='titles listing2'>About Us</h2>
-              </Link>
+              
               <h2 className='titles listing2'>Contact Us</h2>
               
           </p>

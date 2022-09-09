@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <>
-    <div id="bub"></div>
+    <div id="homeCorner"></div>
       <div className="container">
        
 
