@@ -1,6 +1,6 @@
 .BannerLandingLeft {
   margin-left: 0px;
-  background-image: url("../assets/background/croppedBack.jpeg");
+  background-image: url("../assets/background/collov-home-design-H-1j_s0dhCw-unsplash\ \(1\).jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,16 +85,10 @@ button.rec-dot:focus {
 }
 
 #ShopAll {
-  outline: transparent;
-  background-color: black;
-  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid;
+  width: 40%;
+  padding: 8px;
   cursor: pointer;
-  overflow: hidden;
   font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 50px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white;
 }

@@ -34,7 +34,6 @@
 
 .titles {
   font-size: 1.5em;
-  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -101,5 +100,13 @@
 
 .shopByCate {
     display:inline-block;
-    height:10px}
+    height:8px;
+  font-size: 0.8rem;}
 
+
+    .titleCat{
+      font-size: 1rem;
+     
+      }
+  
+  
