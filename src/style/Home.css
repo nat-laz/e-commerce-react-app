@@ -4,17 +4,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  
 }
-
-.container {
+.BannerLandingRight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
+  background-color: rgb(187, 187, 187);
+  font-size: 2rem;
+  color: black;
+  width: 30%;
+  padding: 20px;
 }
 #home-carousel-card {
   margin: 0 20px;
@@ -24,12 +26,6 @@
   color: rgb(250, 250, 251);
 }
 
-.rec-carousel-item:focus {
-  border: 2px solid red;
-  color: green;
-  outline: none;
-  box-shadow: inset 0 0 1px 1px lightgrey;
-}
 
 button.rec-dot {
   background-color: rgb(243, 240, 240);
@@ -51,18 +47,7 @@ button.rec-dot:focus {
   justify-content: center;
 }
 
-.BannerLandingRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(187, 187, 187);
-  font-size: 2rem;
-  color: black;
-  width: 30%;
-  height: 100%;
-  padding: 20px;
-}
+
 .Inset {
   border-radius: 28px;
   height: 92%;
@@ -105,6 +90,15 @@ button.rec-dot:focus {
 #home-carousel-card-box {
   position: relative;
 }
+.wishlist-btn-home{
+  position: absolute;
+  right: 25px;
+  top: 3px;
+  z-index: 1500;
+  font-size: 2.2em;
+  color: white;
+  cursor: pointer;
+}
 
 #home-arrows-carousel {
   margin: 0em;
@@ -118,25 +112,13 @@ button.rec-dot:focus {
 }
 .home-carousel-img {
   width: 100%;
-
-  background-color: transparent;
-  border: 1px solid;
-  width: 40%;
-  padding: 8px;
   cursor: pointer;
-  font-size: 1rem;
 }
 .rec.rec-arrow {
   border-radius: 0;
   color: rgb(250, 250, 251);
 }
 
-.rec-carousel-item:focus {
-  border: 2px solid red;
-  color: green;
-  outline: none;
-  box-shadow: inset 0 0 1px 1px lightgrey;
-}
 button.rec-dot {
   background-color: rgb(243, 240, 240);
   box-shadow: 0 0 1px 2px rgba(193, 192, 192, 0.5);

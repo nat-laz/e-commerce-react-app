@@ -83,7 +83,7 @@ export default function Home() {
           {shuffledProds.map((item) => {
             return (
               <div key={item.id} id="home-carousel-card-box">
-                <div className="wishlist-btn">
+                <div className="wishlist-btn-home">
                   {wishlist.includes(item) ? (
                     <IoMdHeart
                       onClick={() => {
@@ -112,6 +112,7 @@ export default function Home() {
                       <img
                         className="home-carousel-img"
                         src={item.image}
+                        width={335}
                         alt=""
                       />
                     </NavLink>
