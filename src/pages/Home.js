@@ -3,12 +3,14 @@ import "../style/Home.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import Carousel, { consts } from "react-elastic-carousel";
+import { IoMdHeartEmpty, IoMdHeart } from "react-icons/io";
+import toast, { Toaster } from "react-hot-toast";
 import { Card } from "antd";
 const { Meta } = Card;
 
 export default function Home() {
   const navigate = useNavigate();
-  const { products } = useContext(AppContext);
+  const { products, globalAddToWishlist, wishlist } = useContext(AppContext);
 
   function myArrow({ type, onClick, isEdge }) {
     const pointer =
@@ -16,20 +18,20 @@ export default function Home() {
         <img
           src={require("../assets/arrows/icons8-left-48.png")}
           alt="example"
+          width={35}
+          style={{ marginRight: "-12px" }}
         />
       ) : (
         <img
           src={require("../assets/arrows/icons8-right-48.png")}
           alt="example"
+          width={35}
+          style={{ marginLeft: "-20px" }}
         />
       );
 
     return (
-      <button
-        style={{ background: "transparent", border: "none", cursor: "pointer" }}
-        onClick={onClick}
-        disabled={isEdge}
-      >
+      <button id="home-arrows-carousel" onClick={onClick} disabled={isEdge}>
         {pointer}
       </button>
     );
@@ -58,6 +60,7 @@ export default function Home() {
 
   return (
     <div className="container">
+      <Toaster style={{ border: "1px solid black", color: "black" }} />
       <div className="Landing-section1">
         <div className="BannerLandingLeft"></div>
         <div className="BannerLandingRight">
@@ -69,40 +72,58 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Carousel
-        renderArrow={myArrow}
-        breakPoints={breakPoints}
-        style={{ paddingBottom: "35px" }}
-      >
-        {shuffledProds.map((item) => {
-          return (
-            <div key={item.id} className="products-box ">
-              <Card
-                id="home-carousel-card"
-                size="small"
-                bordered={false}
-                hoverable
-                style={{
-                  width: 350,
-                }}
-                
-                cover={
-                  <NavLink to={`/products/${item.id}`} state={item}>
-                    <img
-                      className="products-img"
-                      src={item.image}
-                      width={300}
-                      alt=""
+      <div className="home-carousel">
+        <Carousel
+          enableAutoPlay
+          autoPlaySpeed={1500}
+          renderArrow={myArrow}
+          breakPoints={breakPoints}
+          style={{ paddingBottom: "2.5em" }}
+        >
+          {shuffledProds.map((item) => {
+            return (
+              <div key={item.id} id="home-carousel-card-box">
+                <div className="wishlist-btn">
+                  {wishlist.includes(item) ? (
+                    <IoMdHeart
+                      onClick={() => {
+                        globalAddToWishlist(item.id);
+                        toast(`ITEM WAS REMOVED FROM YOUR WISHLIST`);
+                      }}
                     />
-                  </NavLink>
-                }
-              >
-                <Meta title={item.title} description={`€${item.price}`} />
-              </Card>
-            </div>
-          );
-        })}
-      </Carousel>
+                  ) : (
+                    <IoMdHeartEmpty
+                      onClick={() => {
+                        globalAddToWishlist(item.id);
+                        toast(`ITEM WAS ADDED TO YOUR WISHLIST`);
+                      }}
+                    />
+                  )}
+                </div>
+                <Card
+                  id="home-carousel-card"
+                  bordered={false}
+                  hoverable
+                  style={{
+                    width: 335,
+                  }}
+                  cover={
+                    <NavLink to={`/products/${item.id}`} state={item}>
+                      <img
+                        className="home-carousel-img"
+                        src={item.image}
+                        alt=""
+                      />
+                    </NavLink>
+                  }
+                >
+                  <Meta title={item.title} description={`€${item.price}`} />
+                </Card>
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
     </div>
   );
 }

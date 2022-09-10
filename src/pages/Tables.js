@@ -3,12 +3,14 @@ import { NavLink} from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import toast, { Toaster } from "react-hot-toast";
+import { IoMdHeartEmpty, IoMdHeart } from "react-icons/io";
 import { Card } from "antd";
 const { Meta } = Card;
 
 
 const Tables = () => {
-  const { products, globalAddToCart  } = useContext(AppContext);
+  const { products, globalAddToCart , globalAddToWishlist,
+    wishlist, } = useContext(AppContext);
   
 
   const tables = products.filter((item) => item.category === "Table");
@@ -20,6 +22,23 @@ const Tables = () => {
       {tables.map((item) => {
         return (
           <div className="products-box " key={item.id}>
+            <div className="wishlist-btn">
+                {wishlist.includes(item) ? (
+                  <IoMdHeart
+                    onClick={() => {
+                      globalAddToWishlist(item.id);
+                      toast(`ITEM WAS REMOVED FROM YOUR WISHLIST`);
+                    }}
+                  />
+                ) : (
+                  <IoMdHeartEmpty
+                    onClick={() => {
+                      globalAddToWishlist(item.id);
+                      toast(`ITEM WAS ADDED TO YOUR WISHLIST`);
+                    }}
+                  />
+                )}
+              </div>
               <Card
                 hoverable
                 bordered={false}

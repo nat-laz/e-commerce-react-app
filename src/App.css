@@ -8,6 +8,8 @@
 
 body {
   font-family: "Exo 2", sans-serif;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 .App {
@@ -17,4 +19,5 @@ body {
 
 .main {
   padding-bottom: 250px;
+  
 }

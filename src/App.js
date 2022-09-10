@@ -19,10 +19,12 @@ import Bookcase from "./pages/Bookcase.js";
 import { AppContext } from "./context/AppContext";
 import Footer from "./pages/Footer.js";
 import About from "./pages/About.js";
+import { IoMdHeartEmpty} from "react-icons/io";
 import "./App.css";
 
+
 function App() {
-  const { cart, user } = useContext(AppContext);
+  const { cart, user, wishlist } = useContext(AppContext);
   return (
     <>
       <div className="App">
@@ -63,6 +65,11 @@ function App() {
             </li>
           </>
         )}
+        <li>
+          <Link to="/profile">
+          <IoMdHeartEmpty/> <sup>{wishlist.length}</sup>
+          </Link>
+        </li>
         <li>
           <Link to="/cart">
             <RiShoppingCartLine /> <sup>{cart.length}</sup>

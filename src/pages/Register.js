@@ -1,9 +1,10 @@
 import React,{ useContext } from "react";
 import "antd/dist/antd.min.css";
-import { Form, Input, Button, Radio, Select, DatePicker, Checkbox } from "antd";
+import { Form, Input, Radio, Select, DatePicker, Checkbox } from "antd";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
+import "../style/Register.css";
 
 const { Option } = Select;
 
@@ -22,10 +23,10 @@ const Register = () => {
       password: values.password,
     };
     localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
-    toast.success("YOU HAVE BEEN SUCCESSFULLY REGISTERED");
     setTimeout(() => {
+      toast('YOU ARE SUCCESSFULLY REGISTERED')
       navigate("/");
-    }, 3000);
+    }, 1000);
   };
 
   const prefixSelector = (
@@ -42,8 +43,8 @@ const Register = () => {
   );
 
   return (
-    <>
-      <h1 style={{ marginLeft: "3em" }}>Personal Details</h1>
+    <div className="Registration">
+      <h1 style={{ marginRight: "11em", textAlign: "end"  }}>PERSONAL DETAILS</h1>
       <Toaster
           toastOptions={{
             success: {
@@ -108,7 +109,7 @@ const Register = () => {
         >
           <Input />
         </Form.Item>
-        <Form.Item label="country">
+        <Form.Item label="Country">
           <Select>
             <Select.Option value="Germany">Germany</Select.Option>
             <Select.Option value="Spain">Spain</Select.Option>
@@ -182,16 +183,16 @@ const Register = () => {
           valuePropName="checked"
           style={{ marginLeft: "5em" }}
         >
-          <Checkbox>yes, I want to subscribe to INTERIOR Newsletter</Checkbox>
+          <Checkbox>Yes, I want to subscribe to INTERIOR Newsletter</Checkbox>
         </Form.Item>
 
         <Form.Item style={{ marginLeft: "5em" }}>
-          <Button type="primary" htmlType="submit">
-            Create Account
-          </Button>
+          <button htmltype="submit">
+            CREATE ACCOUNT
+          </button>
         </Form.Item>
       </Form>
-    </>
+    </div>
   );
 };
 

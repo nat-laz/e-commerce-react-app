@@ -10,17 +10,12 @@ import { Card } from "antd";
 const { Meta } = Card;
 
 export default function Products() {
-  const {
-    products,
-    globalAddToCart,
-    toggle,
-    handleToggle,
-    globalAddToWishlist,
-  } = useContext(AppContext);
+  const { products, globalAddToCart, globalAddToWishlist, wishlist } =
+    useContext(AppContext);
 
   const [currentPage, setCurrentPage] = useState(1);
   // console.log(currentPage);
-  const [productsPerPage] = useState(10);
+  const [productsPerPage] = useState(9);
   //get Current Products
   const indexOfLastProduct = currentPage * productsPerPage; //6
 
@@ -44,16 +39,20 @@ export default function Products() {
           return (
             <div className="products-box " key={item.id}>
               <div className="wishlist-btn">
-                {toggle ? (
+                {wishlist.includes(item) ? (
+                  <IoMdHeart
+                    onClick={() => {
+                      globalAddToWishlist(item.id);
+                      toast(`ITEM WAS REMOVED FROM YOUR WISHLIST`);
+                    }}
+                  />
+                ) : (
                   <IoMdHeartEmpty
                     onClick={() => {
-                      handleToggle();
                       globalAddToWishlist(item.id);
                       toast(`ITEM WAS ADDED TO YOUR WISHLIST`);
                     }}
                   />
-                ) : (
-                  <IoMdHeart onClick={handleToggle} />
                 )}
               </div>
               <Card
