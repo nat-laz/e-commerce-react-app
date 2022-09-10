@@ -144,38 +144,14 @@ export default function Footer() {
             </p>
           </p>
 
-          <p className="shopByCate">
-            <p>
-              <b>Shop by Category</b>
-            </p>
-            <p
-              onClick={() => scrolltoTop("/chairs")}
-              style={{ cursor: "pointer" }}
-              className="titles listing2"
-            >
-              Modern Chairs
-            </p>
-            <p
-              onClick={() => scrolltoTop("/tables")}
-              style={{ cursor: "pointer" }}
-              className="titles listing2"
-            >
-              Fancy Dinning Tables
-            </p>
-            <p
-              onClick={() => scrolltoTop("/bookcase")}
-              style={{ cursor: "pointer" }}
-              className="titles listing2"
-            >
-              Stylish Bookcases
-            </p>
-            <p
-              onClick={() => scrolltoTop("/lamps")}
-              style={{ cursor: "pointer" }}
-              className="titles listing2"
-            >
-              Scultural Lamps
-            </p>
+
+          <p className="shopByCate" >
+                <p className="titleCat" ><b>Shop by Category</b></p>
+                <p onClick={()=>scrolltoTop("/chairs")} style={{cursor:"pointer"}} className='titles listing2'>Modern Chairs</p>
+                <p onClick={()=>scrolltoTop("/tables")} style={{cursor:"pointer"}} className='titles listing2'>Fancy Dinning Tables</p>
+                <p onClick={()=>scrolltoTop("/bookcase")} style={{cursor:"pointer"}} className='titles listing2'>Stylish Bookcases</p>
+                <p onClick={()=>scrolltoTop("/lamps")} style={{cursor:"pointer"}} className='titles listing2'>Scultural Lamps</p>
+
           </p>
           <p className="logos-box">
             <ul className="listing">
