@@ -14,6 +14,14 @@ const Cataloge = () => {
         </Link>
       </div>
       <div className="cataloge-img ti">
+        <Link to={`/tables`}>
+          <div class="tag to">Tables</div>
+        </Link>
+        <Link to={"/tables"}>
+          <img src={require("../assets/cataloge/t.jpg")} alt="" />
+        </Link>
+      </div>
+      <div className="cataloge-img ti">
         <Link to={`/lamps`}>
           <div class="tag to">Lamps</div>
         </Link>
@@ -21,14 +29,7 @@ const Cataloge = () => {
           <img src={require("../assets/cataloge/lamp.jpg")} alt="" />
         </Link>
       </div>
-      <div className="cataloge-img ti">
-        <Link to={`/tables`}>
-          <div class="tag to">Tables</div>
-        </Link>
-        <Link to={"/tables"}>
-          <img src={require("../assets/cataloge/table.jpg")} alt="" />
-        </Link>
-      </div>
+   
      
       <div className="cataloge-img ti">
         <Link to={`/bookcase`}>

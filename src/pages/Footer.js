@@ -27,16 +27,17 @@ export default function Footer() {
     <>
       <div className="footer text-dark bg-medium ">
         
-        <div className="contactUsForm container-box1 bg-light  split">
+        <div className="contactUsForm  bg-light ">
           <div className="contactus-message">
-          <div className="weWillContact">
-            Leave your email and we 
-            will contact you
-          </div>
-          <div className="para"><p>we will be able to give you advise and chose furniture for your interior design</p></div>
+          <h4 className="weWillContact">
+            Leave your email and we <br />
+            <span>will contact you</span>
+          </h4>
+          <p>we will be able to give you advise and chose furniture for your interior design</p>
           </div>
           <div>
-            <Form
+           <div className="contactus-message">
+           <Form 
              style={{marginTop: "2em"}}
               name="basic"
               labelCol={{
@@ -50,7 +51,7 @@ export default function Footer() {
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
-              <Form.Item
+              <Form.Item 
                 label="NAME"
                 name="Name"
                 rules={[
@@ -98,6 +99,7 @@ export default function Footer() {
                 </button>
               </Form.Item>
             </Form>
+           </div>
           </div>
         </div>
 

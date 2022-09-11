@@ -1,17 +1,18 @@
 .Cataloge {
-  width: 78%;
+  width: 82%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5em auto;
+  margin: 1em auto;
 }
 .cataloge-img {
   width: 95%;
-  height: 25em;
+  height: 14em;
   margin-bottom: 2em;
   position: relative;
   border-radius: 2px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .cataloge-img img {
@@ -30,19 +31,17 @@
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  /* padding: 5px 0; */
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   position: absolute !important;
-  right: 85px;
-  bottom: 47px;
+  right: 80px;
+  bottom: 0.8em;
   z-index: 1000;
-  /* padding: 2px; */
   color: #ffffff;
   font-weight: bold;
-  font-size: 3.5em;
+  font-size: 2em;
 }
 .tag:before {
   content: "";
@@ -63,10 +62,3 @@
 .tag:hover::before {
   width: 100%;
 }
-
-/* .ti:hover .to {
-  text-decoration: underline;
-}
-.cataloge-icon{
-  width: 2em;
-} */
