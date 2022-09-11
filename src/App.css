@@ -31,8 +31,6 @@ p {
   margin: 0;
   padding: 0;
 
-
-  
 }
 
 
@@ -93,12 +91,8 @@ p {
   background-color: var(--clr-neutral-1000);
 }
 
-.logoSvg {
-  height: 100px;
-  width: 100px;
-  
- 
-}
+
+
 
 .titles1 {
  display: flex;
@@ -106,7 +100,6 @@ p {
  text-align: center;
  width:100%;
  align-items: center;
- margin-top: 20px;
   
 }
 

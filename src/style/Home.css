@@ -1,4 +1,11 @@
-
+.Landing-section1 {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+  justify-content: center;
+}
 
 .BannerLandingLeft {
   margin-left: 0px;
@@ -41,14 +48,7 @@ button.rec-dot:focus {
   box-shadow: 0 0 1px 3px rgba(235, 177, 16, 0.5);
 }
 
-.Landing-section1 {
-  width: 100vw;
-  height: 85vh;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 60px;
-  justify-content: center;
-}
+
 
 
 .Inset {

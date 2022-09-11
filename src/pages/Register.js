@@ -1,6 +1,6 @@
 import React,{ useContext } from "react";
 import "antd/dist/antd.min.css";
-import { Form, Input, Radio, Select, DatePicker, Checkbox } from "antd";
+import { Form, Input, Radio, Select, DatePicker, Checkbox, Button } from "antd";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
@@ -23,6 +23,7 @@ const Register = () => {
       email: values.email,
       password: values.password,
     };
+    // console.log(registeredUsers)
     localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
     setTimeout(() => {
       toast('YOU ARE SUCCESSFULLY REGISTERED')
@@ -67,7 +68,7 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="First name"
-         
+          name="firstName"
           rules={[
             {
               required: true,
@@ -83,7 +84,7 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="Last name"
-          // name="lastName"
+          name="lastName"
           rules={[
             {
               required: true,
@@ -97,7 +98,7 @@ const Register = () => {
         >
           <Input />
         </Form.Item>
-        <Form.Item label="Country">
+        <Form.Item label="Country" name="country">
           <Select>
             <Select.Option value="Germany">Germany</Select.Option>
             <Select.Option value="Spain">Spain</Select.Option>
@@ -112,6 +113,7 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="City"
+          name="city"
           rules={[
             {
               pattern: /^[a-zA-Z0-9]+$/,
@@ -122,7 +124,7 @@ const Register = () => {
           <Input />
         </Form.Item>
 
-        <Form.Item label="Phone Number">
+        <Form.Item label="Phone Number" name="phoneNumber">
           <Input
             addonBefore={prefixSelector}
             style={{
@@ -131,12 +133,12 @@ const Register = () => {
           />
         </Form.Item>
 
-        <Form.Item label="Birthdate" >
+        <Form.Item label="Birthdate" name="birthdate" >
           <DatePicker />
         </Form.Item>
 
         <Form.Item
-         
+         name="email"
           label="E-mail"
           rules={[
             {
@@ -154,7 +156,7 @@ const Register = () => {
 
         <Form.Item
           label="Password"
-         
+          name="password"
           rules={[
             {
               required: true,
@@ -166,7 +168,7 @@ const Register = () => {
         </Form.Item>
 
         <Form.Item
-          
+          name="checked"
           valuePropName="checked"
           style={{ marginLeft: "5em" }}
         >
@@ -174,9 +176,9 @@ const Register = () => {
         </Form.Item>
 
         <Form.Item>
-          <button htmltype="submit">
+          <Button htmlType="submit">
             CREATE ACCOUNT
-          </button>
+          </Button>
         </Form.Item>
       </Form>
     </div>
