@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
 import "../style/Register.css";
 
+
 const { Option } = Select;
 
 const Register = () => {
@@ -44,21 +45,8 @@ const Register = () => {
 
   return (
     <div className="Registration">
-      <h1 style={{ marginRight: "11em", textAlign: "end"  }}>PERSONAL DETAILS</h1>
-      <Toaster
-          toastOptions={{
-            success: {
-              style: {
-                border: "1px solid", color: 'black',
-              },
-            },
-            error: {
-              style: {
-                border: "1px solid", color: 'black',
-              },
-            },
-          }}
-        />
+      <h1 style={{  textAlign: "center"  }}>PERSONAL DETAILS</h1>
+        <Toaster className="toaster-alert" />
       <Form
         labelCol={{
           span: 4,
@@ -70,7 +58,7 @@ const Register = () => {
         onFinish={formSubmittedData}
         onFinishFailed={() => console.log("Form failed")}
       >
-        <Form.Item label="Title" name="title">
+        <Form.Item label="Title">
           <Radio.Group>
             <Radio value="Mr."> Mr. </Radio>
             <Radio value="Mrs."> Mrs. </Radio>
@@ -79,7 +67,7 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="First name"
-          name="firstName"
+         
           rules={[
             {
               required: true,
@@ -95,7 +83,7 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="Last name"
-          name="lastName"
+          // name="lastName"
           rules={[
             {
               required: true,
@@ -124,7 +112,6 @@ const Register = () => {
         </Form.Item>
         <Form.Item
           label="City"
-          name="city"
           rules={[
             {
               pattern: /^[a-zA-Z0-9]+$/,
@@ -135,7 +122,7 @@ const Register = () => {
           <Input />
         </Form.Item>
 
-        <Form.Item name="phone" label="Phone Number">
+        <Form.Item label="Phone Number">
           <Input
             addonBefore={prefixSelector}
             style={{
@@ -144,12 +131,12 @@ const Register = () => {
           />
         </Form.Item>
 
-        <Form.Item label="Birthdate" name="birthdate">
+        <Form.Item label="Birthdate" >
           <DatePicker />
         </Form.Item>
 
         <Form.Item
-          name="email"
+         
           label="E-mail"
           rules={[
             {
@@ -167,7 +154,7 @@ const Register = () => {
 
         <Form.Item
           label="Password"
-          name="password"
+         
           rules={[
             {
               required: true,
@@ -179,14 +166,14 @@ const Register = () => {
         </Form.Item>
 
         <Form.Item
-          name="isAccepted"
+          
           valuePropName="checked"
           style={{ marginLeft: "5em" }}
         >
           <Checkbox>Yes, I want to subscribe to INTERIOR Newsletter</Checkbox>
         </Form.Item>
 
-        <Form.Item style={{ marginLeft: "5em" }}>
+        <Form.Item>
           <button htmltype="submit">
             CREATE ACCOUNT
           </button>

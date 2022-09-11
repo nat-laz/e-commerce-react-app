@@ -1,5 +1,5 @@
-import React, { useContext, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useContext, useRef,  useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import "../style/Product.css";
 import { Carousel } from "antd";
@@ -11,27 +11,33 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function Product() {
   const ref = useRef();
-  const location = useLocation();
-  const { setCart, cart, globalAddToWishlist, wishlist } =
+  const { id } = useParams();
+  const { setCart, cart, globalAddToWishlist, wishlist, products } =
     useContext(AppContext);
+    const [product, setProduct] = useState(null);
 
-  const addToCart = () => {
-    const findedItem = cart.find((item) => item.id === location.state.id);
+    const addToCart = () => {
+    const findedItem = cart.find((item) => item.id === product.id);
     if (findedItem) {
       findedItem.quantity++;
       return setCart([...cart]);
     } else {
-      location.state.quantity = 1;
-      return setCart([...cart, location.state]);
+      product.quantity = 1;
+      return setCart([...cart, product]);
     }
   };
-  console.log(wishlist.includes(location.state));
-  console.log(wishlist);
-  console.log(location.state.id);
+ 
+  useEffect(() => {
+    const singleProduct = products.find((item) => item.id === +id); //used "+" to convert in number
+    console.log(singleProduct)
+    setProduct(singleProduct);
+  }, []);
+// console.log(product)
+// console.log(products)
   return (
     <div className="Product">
-      <Toaster style={{ border: "1px solid black", color: "black" }} />
-      {location.state && (
+      <Toaster className="toaster-alert" />
+      {product && (
         <div className="single-product-box">
           <div className="single-product-img-arrows">
             <VscArrowLeft
@@ -40,17 +46,17 @@ export default function Product() {
             />
             <div className="single-product-images-carousel">
               <div className="wishlist-btn">
-                {wishlist.includes(location.state) ? (
+                {wishlist.includes(product) ? (
                   <IoMdHeart
                     onClick={() => {
-                      globalAddToWishlist(location.state.id);
+                      globalAddToWishlist(product.id);
                       toast(`ITEM WAS REMOVED FROM YOUR WISHLIST`);
                     }}
                   />
                 ) : (
                   <IoMdHeartEmpty
                     onClick={() => {
-                      globalAddToWishlist(location.state.id);
+                      globalAddToWishlist(product.id);
                       toast(`ITEM WAS ADDED TO YOUR WISHLIST`);
                     }}
                   />
@@ -64,8 +70,8 @@ export default function Product() {
                 ref={ref}
                 effect="scrollx"
               >
-                <img src={location.state.image} alt="" width={200} />
-                {location.state.images.map((item) => (
+                <img src={product.image} alt="" width={200} />
+                {product.images.map((item) => (
                   <img key={uuid()} src={item} alt="" width={200} />
                 ))}
               </Carousel>
@@ -76,18 +82,18 @@ export default function Product() {
             />
           </div>
           <div className="single-page-details">
-            <h1>{location.state.category}</h1>
-            <p>{location.state.title}</p>
-            <h4>{location.state.price}€</h4>
+            <h1>{product.category}</h1>
+            <p>{product.title}</p>
+            <h4>{product.price}€</h4>
             <div>
               {" "}
               <Rate
                 style={{ color: "#5f7470" }}
                 disabled
-                defaultValue={location.state.rating.rate}
+                defaultValue={product.rating.rate}
               />
               <sup style={{ color: "#5f7470", marginLeft: "8px" }}>
-                {location.state.rating.count}
+                {product.rating.count}
               </sup>
             </div>
             <button
@@ -99,7 +105,7 @@ export default function Product() {
               ADD TO CART
             </button>
             <h3>Description</h3>
-            <p>{location.state.description}</p>
+            <p>{product.description}</p>
           </div>
         </div>
       )}

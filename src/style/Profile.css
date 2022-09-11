@@ -25,3 +25,11 @@
 .wishlist-wrapper{
     width: 70%;
 }
+#wishlist-empty{
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: .9em;
+}

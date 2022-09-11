@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <Toaster style={{ border: "1px solid black", color: "black" }} />
+      <Toaster className="toaster-alert" />
       <div className="Landing-section1">
         <div className="BannerLandingLeft"></div>
         <div className="BannerLandingRight">

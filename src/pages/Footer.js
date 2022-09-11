@@ -36,7 +36,6 @@ export default function Footer() {
           </div>
           <Form
            style={{marginTop: "2em"}}
-            name="basic"
             labelCol={{
               span: 8,
             }}
@@ -50,7 +49,7 @@ export default function Footer() {
           >
             <Form.Item
               label="NAME"
-              name="Name"
+            
               rules={[
                 {
                   message: "Please input your username!",
@@ -63,7 +62,7 @@ export default function Footer() {
             <Form.Item
            
               label="E-MAIL"
-              name="email"
+            
               rules={[
                 {
                   type: "email",
@@ -85,7 +84,7 @@ export default function Footer() {
               }}
             >
               <button
-                htmlType="submit"
+                htmltype="submit"
                 style={{
                   background: "transparent",
                   cursor: "pointer",
@@ -101,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="Cont_SocialMedia_foot">
-          <p>
+          
             <h2 className="titles">Contact Us</h2>
             <ul className="listing2">
               <li>
@@ -118,9 +117,9 @@ export default function Footer() {
                 <b>Address: </b>1234 Main Street, Anytown, USA 12345
               </li>
             </ul>
-          </p>
+       
 
-          <p>
+          
             <p
               onClick={() => scrolltoTop("/")}
               style={{ cursor: "pointer" }}
@@ -142,18 +141,18 @@ export default function Footer() {
             >
               Cart
             </p>
-          </p>
+          
 
 
-          <p className="shopByCate" >
+          <div className="shopByCate" >
                 <p className="titleCat" ><b>Shop by Category</b></p>
                 <p onClick={()=>scrolltoTop("/chairs")} style={{cursor:"pointer"}} className='titles listing2'>Modern Chairs</p>
                 <p onClick={()=>scrolltoTop("/tables")} style={{cursor:"pointer"}} className='titles listing2'>Fancy Dinning Tables</p>
                 <p onClick={()=>scrolltoTop("/bookcase")} style={{cursor:"pointer"}} className='titles listing2'>Stylish Bookcases</p>
                 <p onClick={()=>scrolltoTop("/lamps")} style={{cursor:"pointer"}} className='titles listing2'>Scultural Lamps</p>
 
-          </p>
-          <p className="logos-box">
+          </div>
+          <div className="logos-box">
             <ul className="listing">
               <li className="logos2">
                  <IoLogoTwitter/>
@@ -169,7 +168,7 @@ export default function Footer() {
                 <IoLogoInstagram />
               </li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <p className="ReservedRights">

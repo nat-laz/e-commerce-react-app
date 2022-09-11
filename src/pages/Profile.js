@@ -5,7 +5,7 @@ import "../style/Profile.css";
 import Wishlist from "../component/Wishlist";
 
 export default function Profile() {
-  const { user, setUser } = useContext(AppContext);
+  const { user, setUser, wishlist } = useContext(AppContext);
   if (user) {
     return (
       <div className="Profile">
@@ -26,7 +26,7 @@ export default function Profile() {
 
         <div className="wishlist-wrapper">
           <p>YOUR WISHLIST</p>
-          <Wishlist/>
+          {wishlist.length === 0?<div id="wishlist-empty"><p>YOU HAVE NO PENDING ITEMS FOR LATER PURCHASE</p></div>:<Wishlist/>}
         </div>
       </div>
     );
