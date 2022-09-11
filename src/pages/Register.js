@@ -46,7 +46,7 @@ const Register = () => {
 
   return (
     <div className="Registration">
-      <h1 style={{  textAlign: "center"  }}>PERSONAL DETAILS</h1>
+      <h1 style={{  textAlign: "center" }}>PERSONAL DETAILS</h1>
         <Toaster className="toaster-alert" />
       <Form
         labelCol={{
