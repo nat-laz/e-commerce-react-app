@@ -7,7 +7,7 @@
 }
 .cataloge-img {
   width: 95%;
-  height: 14em;
+  height: 25em;
   margin-bottom: 2em;
   position: relative;
   border-radius: 2px;
@@ -37,11 +37,11 @@
   transition: all 0.3s ease-in-out;
   position: absolute !important;
   right: 80px;
-  bottom: 0.8em;
+  bottom: 1.3em;
   z-index: 1000;
   color: #ffffff;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3.5em;
 }
 .tag:before {
   content: "";
