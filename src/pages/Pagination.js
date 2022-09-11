@@ -22,7 +22,7 @@ export default function Pagination({ productsPerPage, totalPosts, paginate }) {
         {pageNumbers.map((number) => {
           return (
             <>
-              <li
+              <li 
                 className="Numero"
                 key={uuid()}
                 onClick={() => paginate(number)}
