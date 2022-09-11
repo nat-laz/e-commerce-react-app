@@ -5,7 +5,9 @@
     text-decoration: none;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
+     
+   
 
 }
 li a{
@@ -16,21 +18,16 @@ li a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
+
 
 .nav-links{
 width: 40%;
+
 }
 
 .nav-log-cart{
    width: 10%;
 }
 
-.nav-logo {
-    height: 100px;
-}
-
-.nav-logo img {
-    height: 100%;
-    width:auto
-}

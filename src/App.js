@@ -23,34 +23,46 @@ import { IoMdHeartEmpty} from "react-icons/io";
 import "./App.css";
 
 
+
+
 function App() {
+  
+
+
+  
+
+
   const { cart, user, wishlist } = useContext(AppContext);
   return (
     <>
+     
       <div className="App">
         <div className="main">
         <div className="Navbar">
       <div className="nav-logo">
+        
         <Link to="/">
-          <img src={require("./assets/logo/furniture.png")} alt="" width="150" />
+          <img src={require("./assets/logo/iHaveThis.png")} alt="logoSvg" style={{height:"120px"}}/>
+ 
         </Link>
       </div>
 
-      <div className="nav-links">
-        <li>
-          <Link to="/about">ABOUT</Link>
-        </li>
-
-        <li>
-          <Link to="/cataloge" >CATALOGUE</Link>
-        </li>
-        <li>
-          <Link to="/products">PRODUCTS</Link>
-        </li>
-
-        <li>
-          <a href="#contactme">CONTACT</a>
-        </li>
+      <div style={{display:"flex",flexDirection:"column"}} className="nav-links" >
+        
+        <div className="nav-links titles1">
+          <li >
+            <Link to="/about">ABOUT</Link>
+          </li>
+          <li>
+            <Link to="/cataloge" >CATALOGUE</Link>
+          </li>
+          <li>
+            <Link to="/products">PRODUCTS</Link>
+          </li>
+          <li>
+            <a href="#contactme">CONTACT</a>
+          </li>
+        </div>
       </div>
 
       <div className="nav-log-cart">

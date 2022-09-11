@@ -1,5 +1,14 @@
+
+
+
+
+
+
+
+
+
 .footer {
-  background-color: rgb(204, 204, 204);
+  font-size:medium;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -14,7 +23,7 @@
   padding-top: 5px;
   padding-bottom: 10px;
   border-radius: 4px;
-  width: 400px;
+  width: 45em;
 }
 
 .common::placeholder {
@@ -27,10 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .titles {
-  font-size: 1.5em;
+  font-size: large;
   margin: 0;
   padding: 0;
 }
@@ -61,13 +71,7 @@
   cursor: pointer;
 }
 
-.ReservedRights {
-  font-size: 0.8rem;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: 60px;
-}
+
 .ReservedRights {
   font-size: 0.8rem;
   margin: 0;
@@ -84,7 +88,7 @@
 }
 
 .contactUsForm {
-  background-color: rgb(221, 221, 221);
+ 
   height: 230px;
   width: 100%;
   position: absolute;
@@ -94,25 +98,47 @@
   padding-left: 8em;
 }
 .contactus-message{
-  width: 40%;
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-.contactus-message p{
-   width: 25em;
+
+.para {
+  display: flex;
+  justify-content: center;
+}
+ .contactus-message p{
+   width:min(45%,300px);
    margin: 0em;
-}
+   text-align: center;
+} 
 .shopByCate {
 
   display: inline-block;
   height: 10px;
 }
 
+.titles {
+  font-size: large;
+  font-weight:bold;
+}
 
+.listing2 li {
+  font-size: large;
+}
 
 
     .titleCat{
-      font-size: 1rem;
+      font-size: x-large;
      
       }
   
   
 
+  .weWillContact {
+    font-size:2.5em;
+    line-height: 1.3em;
+    margin-bottom: 0.3em;
+  }

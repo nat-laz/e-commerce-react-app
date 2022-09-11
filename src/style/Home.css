@@ -1,3 +1,5 @@
+
+
 .BannerLandingLeft {
   margin-left: 0px;
   background-image: url("../assets/background/collov-home-design-H-1j_s0dhCw-unsplash\ \(1\).jpg");
@@ -7,6 +9,7 @@
   width: 70%;
   
 }
+
 .BannerLandingRight {
   display: flex;
   flex-direction: column;
@@ -40,7 +43,7 @@ button.rec-dot:focus {
 
 .Landing-section1 {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   flex-direction: row;
   margin-bottom: 60px;

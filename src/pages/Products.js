@@ -26,7 +26,7 @@ export default function Products() {
   ); //6
 
   //change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => {setCurrentPage(pageNumber, window.scrollTo(0,0))};
 
   return (
     <>
