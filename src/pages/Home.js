@@ -62,15 +62,17 @@ export default function Home() {
     <div className="container">
       <Toaster className="toaster-alert" />
       <div className="Landing-section1">
-        <div className="BannerLandingLeft"></div>
+        
         <div className="BannerLandingRight">
           <div className="Inset">
-            <p className="greetings">Good to see you</p>
+            <p className="greetings">COZY.<br/>MODERN.<br/>FURNITURE.</p>
+            <p className="greetings1">Interior Design</p>
             <button onClick={() => navigate("./products")} id="ShopAll">
               SHOP BACK IN STOCK
             </button>
           </div>
         </div>
+        <div className="BannerLandingLeft"></div>
       </div>
       <div className="home-carousel">
         <Carousel

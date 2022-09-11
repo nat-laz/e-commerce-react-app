@@ -30,8 +30,8 @@ export default function Footer() {
         <div className="contactUsForm container-box1 bg-light  split">
           <div className="contactus-message">
           <div className="weWillContact">
-            Leave your email and we <br />
-            <span>will contact you</span>
+            Leave your email and we 
+            will contact you
           </div>
           <div className="para"><p>we will be able to give you advise and chose furniture for your interior design</p></div>
           </div>
