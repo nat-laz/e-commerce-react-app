@@ -1,18 +1,20 @@
 .Registration {
   width: 80vw;
+  height: 90vh;
   margin: 2em auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 2em;
   
 }
 .Registration button {
   background-color: transparent;
-  border: 1px solid black;
-  padding: 8px 25px;
-  width: 51em;
+  border: 0.2px solid black;
+  padding: 7px 25px;
+  width: 100%;
   font-weight: bold;
-  text-align: center;
   cursor: pointer;
-   margin-left: 10em;
+  margin-left:29%;
 }
+

@@ -97,6 +97,9 @@
   align-items: center;
   padding-left: 8em;
 }
+
+
+
 .contactus-message{
   width:40%;
   display: flex;
@@ -108,6 +111,7 @@
 .para {
   display: flex;
   justify-content: center;
+
 }
  .contactus-message p{
    width:min(45%,300px);
@@ -115,9 +119,13 @@
    text-align: center;
 } 
 .shopByCate {
-
   display: inline-block;
   height: 10px;
+}
+
+
+.titleCat {
+  font-size: 1rem;
 }
 
 .titles {
@@ -142,3 +150,4 @@
     line-height: 1.3em;
     margin-bottom: 0.3em;
   }
+

@@ -17,7 +17,7 @@ const Bookcase = () => {
   return (
     
     <div className="products-wrapper">
-       <Toaster style={{border:"1px solid black",color:"black"}}/>
+       <Toaster className="toaster-alert" />
       {bookcase.map((item) => {
         return (
           <div className="products-box " key={item.id}>

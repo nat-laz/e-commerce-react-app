@@ -14,7 +14,7 @@ const Lamps = () => {
   const lamps = products.filter((item) => item.category === "Lamp");
   return (
     <div className="products-wrapper">
-      <Toaster style={{ border: "1px solid black", color: "black" }} />
+      <Toaster className="toaster-alert" />
       {lamps.map((item) => {
         return (
           <div className="products-box " key={item.id}>

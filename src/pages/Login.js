@@ -41,22 +41,22 @@ export default function Login() {
           toastOptions={{
             success: {
               style: {
-                border: "1px solid",
+                boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
                 color: "black",
-                padding: "15px",
+                padding:"8px 15px",
               },
             },
             error: {
               style: {
-                border: "1px solid",
+                boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
                 color: "black",
-                padding: "15px",
+                padding:"8px 15px",
               },
             },
           }}
         />
         <Form
-          name="basic"
+         
           labelCol={{
             span: 8,
           }}
@@ -99,7 +99,7 @@ export default function Login() {
               span: 16,
             }}
           >
-            <button className="login-btn log" htmlType="submit"> 
+            <button className="login-btns log" htmltype="submit"> 
               LOG IN</button>
             
           </Form.Item>
@@ -115,7 +115,7 @@ export default function Login() {
           BY GIVING US YOUR DETAILS, PURCHASING WILL BE FASTER AND AN ENJOYABLE
           EXPERIENCE.
         </p>
-        <button className="login-btn create" onClick={() => navigate("/register")}>
+        <button className="login-btns create" onClick={() => navigate("/register")}>
           CREATE ACCOUNT
         </button>
       </div>

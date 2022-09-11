@@ -30,9 +30,7 @@ export default function Products() {
 
   return (
     <>
-      <Toaster
-        style={{ border: "1px solid black", color: "black", padding: "12px" }}
-      />
+      <Toaster className="toaster-alert" />
 
       <div className="products-wrapper">
         {currentProducts.map((item) => {

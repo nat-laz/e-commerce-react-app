@@ -1,6 +1,6 @@
 .Login {
   width: 80vw;
-  margin: 3em auto;
+  margin: 5em auto;
   display: flex;
 }
 
@@ -14,15 +14,14 @@
   width: 60%;
   padding-left: 12em;
 }
-.login-btn {
- background-color: transparent;
+.login-btns {
+  background-color: transparent;
   border: 1px solid black;
   padding: 5px;
   font-weight: bold;
   text-align: center;
   margin-top: 2.5em;
   cursor: pointer;
-  
 }
 .log {
   width: 100%;
@@ -30,8 +29,7 @@
 }
 .LoginCreateAccount p {
   width: 32em;
-  
 }
 .create {
-  width: 42%;
+  width: 43%;
 }
