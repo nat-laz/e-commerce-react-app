@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
+
 .Landing-section1 {
   width: 100vw;
   height: 85vh;
@@ -9,7 +12,7 @@
 
 .BannerLandingLeft {
   margin-left: 0px;
-  background-image: url("../assets/background/collov-home-design-H-1j_s0dhCw-unsplash\ \(1\).jpg");
+  background-image: url("../assets/background/e-commerce-backgroundimg2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(187, 187, 187);
+  background-color: #3b3c37;
   font-size: 2rem;
   color: black;
   width: 30%;
@@ -55,22 +58,29 @@ button.rec-dot:focus {
   border-radius: 28px;
   height: 92%;
   width: 92%;
-  background-color: rgb(238, 238, 238);
+  background-color: #f2efe2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+
+
 }
 
 .BannerLandingRight .greetings {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 300;
   color: black;
-  line-height: 75px;
+  line-height: 60px;
   text-align: center;
   margin-bottom: 30px;
   width: 70%;
+ 
+  
 }
+.greetings1{
+font-family: "Dancing Script", cursive;}
 
 #ShopAll {
   background-color: black;
@@ -134,3 +144,5 @@ button.rec-dot:active,
 button.rec-dot:focus {
   box-shadow: 0 0 1px 1px #5f7470;
 }
+
+
