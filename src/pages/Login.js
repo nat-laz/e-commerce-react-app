@@ -72,6 +72,7 @@ export default function Login() {
         >
           <Form.Item
             label="EMAIL"
+            name="email"
             rules={[
               {
                 required: true,
@@ -83,6 +84,7 @@ export default function Login() {
           </Form.Item>
           <Form.Item
             label="PASSWORD"
+            name="password"
             rules={[
               {
                 required: true,

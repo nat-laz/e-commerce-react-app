@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import React,{ useContext } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { RiShoppingCartLine } from "react-icons/ri";
 import "./style/Navbar.css";
@@ -19,79 +19,72 @@ import Bookcase from "./pages/Bookcase.js";
 import { AppContext } from "./context/AppContext";
 import Footer from "./pages/Footer.js";
 import About from "./pages/About.js";
-import { IoMdHeartEmpty} from "react-icons/io";
+import { RiHeartLine, RiUser3Line } from "react-icons/ri";
 import "./App.css";
 
-
-
-
 function App() {
-  
-
-
-  
-
-
   const { cart, user, wishlist } = useContext(AppContext);
   return (
     <>
-     
       <div className="App">
         <div className="main">
-        <div className="Navbar">
-      <div className="nav-logo">
-        
-        <Link to="/">
-          <img src={require("./assets/logo/iHaveThis.png")} alt="logoSvg" style={{height:"120px"}}/>
- 
-        </Link>
-      </div>
+          <div className="Navbar">
+            <div className="nav-logo">
+              <Link to="/">
+                <img
+                  src={require("./assets/logo/iHaveThis.png")}
+                  alt="logoSvg"
+                />
+              </Link>
+            </div>
 
-      <div style={{display:"flex",flexDirection:"column"}} className="nav-links" >
+            <div
         
-        <div className="nav-links titles1">
-          <li >
-            <Link to="/about">ABOUT</Link>
-          </li>
-          <li>
-            <Link to="/cataloge" >CATALOGUE</Link>
-          </li>
-          <li>
-            <Link to="/products">PRODUCTS</Link>
-          </li>
-          <li>
-            <a href="#contactme">CONTACT</a>
-          </li>
-        </div>
-      </div>
+              className="nav-links"
+            >
+              <div className="nav-links titles1">
+                <li>
+                  <Link to="/about">ABOUT</Link>
+                </li>
+                <li>
+                  <Link to="/cataloge">CATALOGUE</Link>
+                </li>
+                <li>
+                  <Link to="/products">PRODUCTS</Link>
+                </li>
+                <li>
+                  <a href="#contactme">CONTACT</a>
+                </li>
+              </div>
+            </div>
 
-      <div className="nav-log-cart">
-        {user ? (
-          <li>
-            <Link to="/profile">{user.firstName.toUpperCase()}</Link>
-          </li>
-        ) : (
-          <>
-            <li>
-              <Link to="/login">LOG IN</Link>
-            </li>
-          </>
-        )}
-        <li>
-          <Link to="/profile">
-          <IoMdHeartEmpty/> <sup>{wishlist.length}</sup>
-          </Link>
-        </li>
-        <li>
-          <Link to="/cart">
-            <RiShoppingCartLine /> <sup>{cart.length}</sup>
-          </Link>
-        </li>
-      </div>
-    </div>
+            <div className="nav-log-cart">
+              {user ? (
+                <li>
+                  <Link to="/profile"><RiUser3Line/> </Link>
+                </li>
+              ) : (
+                <>
+                  <li>
+                    <Link to="/login">LOG IN</Link>
+                  </li>
+                </>
+              )}
+              <li>
+                <Link to="/profile">
+                  <RiHeartLine /> <sup>{wishlist.length}</sup>
+                </Link>
+              </li>
+              <li>
+                <Link to="/cart">
+                  <RiShoppingCartLine /> <sup>{cart.length}</sup>
+                </Link>
+              </li>
+            </div>
+          </div>
 
           <Routes>
-            <Route path="/" element={<Home />} /> 
+            <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<Product />} />
             <Route path="/profile" element={<Profile />} />
@@ -107,7 +100,6 @@ function App() {
 
             <Route path="*" element={<NotFound />} />
           </Routes>
-          
         </div>
 
         <div id="contactme">

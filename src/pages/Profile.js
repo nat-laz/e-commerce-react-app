@@ -6,13 +6,14 @@ import Wishlist from "../component/Wishlist";
 
 export default function Profile() {
   const { user, setUser, wishlist } = useContext(AppContext);
+  console.log(user)
   if (user) {
     return (
       <div className="Profile">
         <div className="profile-info">
           <p>PROFILE</p>
           <h4>
-            {user.lastName.toUpperCase()} {user.firstName.toUpperCase()}
+            {user.lastName} {user.firstName}
           </h4>
           <p>{user.email}</p>
           <h4>ACCOUNT</h4>
