@@ -1,4 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,200;1,300;1,500;1,700&display=swap');
+:root {
+  --clr-primary-200:rgb(238, 238, 238);
+  --clr-primary-400:rgb(187, 187, 187);
+  --clr-neutral-700:rgb(147,147,147);
+  --clr-neutral-800:rgb(131,131,131);
+  --clr-neutral-900:rgb(56,56,56);
+  --clr-neutral-1000:rgb(0,0,0);
+
+  --ff-primary: font-family: "Exo 2", sans-serif,
+}
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3135rem;
+  line-height:1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+
+
+  
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -6,9 +43,6 @@
   padding: 0;
 }
 
-body {
-  font-family: "Exo 2", sans-serif;
-}
 
 .App {
   position: relative;
@@ -19,8 +53,61 @@ body {
   padding-bottom: 250px;
   
 }
+
  .toaster-alert{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: black;
   padding: 8px 15px;
  }
+
+/* utility classes */
+
+
+.text-light {
+  color: var(--clr-primary-200);
+}
+
+
+.text-medium {
+  color: var(--clr-neutral-900);
+}
+
+
+.bg-light {
+ 
+  background-color: var(--clr-primary-200);
+}
+
+.bg-medium {
+  
+  background-color: var(--clr-neutral-800);
+}
+
+.bg-dark {
+  
+  background-color: var(--clr-neutral-900);
+}
+
+.bg-darker {
+  
+  background-color: var(--clr-neutral-1000);
+}
+
+.logoSvg {
+  height: 100px;
+  width: 100px;
+  
+ 
+}
+
+.titles1 {
+ display: flex;
+ justify-content: space-around;
+ text-align: center;
+ width:100%;
+ align-items: center;
+ margin-top: 20px;
+  
+}
+
+
