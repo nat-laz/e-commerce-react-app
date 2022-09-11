@@ -29,6 +29,7 @@
 }
 .LoginCreateAccount p {
   width: 32em;
+  font-size: medium;
 }
 .create {
   width: 43%;
