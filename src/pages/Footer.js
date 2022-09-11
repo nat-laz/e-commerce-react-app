@@ -33,52 +33,6 @@ export default function Footer() {
             Leave your email and we <br />
             <span>will contact you</span>
           </div>
-
-          <Form
-           style={{marginTop: "2em"}}
-            labelCol={{
-              span: 8,
-            }}
-            wrapperCol={{
-              span: 16,
-            }}
-            initialValues={{}}
-            onFinish={onFinish}
-            onFinishFailed={onFinishFailed}
-            autoComplete="off"
-          >
-            <Form.Item
-              label="NAME"
-            
-              rules={[
-                {
-                  message: "Please input your username!",
-                },
-              ]}
-            >
-              <Input className="secondInput common" placeholder="Name" />
-            </Form.Item>
-
-            <Form.Item
-           
-              label="E-MAIL"
-            
-              rules={[
-                {
-                  type: "email",
-                  message: "The input is not valid E-mail!",
-                },
-                {
-                  message: "Please input your E-mail!",
-                },
-              ]}
-            >
-              {" "}
-              <Input className="secondInput common" placeholder="Email" />
-            </Form.Item>
-
-            <Form.Item
-
           <div className="para"><p>we will be able to give you advise and chose furniture for your interior design</p></div>
           </div>
           <div>
@@ -88,7 +42,6 @@ export default function Footer() {
               labelCol={{
                 span: 8,
               }}
-
               wrapperCol={{
                 span: 16,
               }}
@@ -97,16 +50,6 @@ export default function Footer() {
               onFinishFailed={onFinishFailed}
               autoComplete="off"
             >
-
-              <button
-                htmltype="submit"
-                style={{
-                  background: "transparent",
-                  cursor: "pointer",
-                  border: "1px solid black",
-                  padding: '5px 18px',
-                  width: '14em'
-
               <Form.Item
                 label="NAME"
                 name="Name"
@@ -139,7 +82,6 @@ export default function Footer() {
                 wrapperCol={{
                   offset: 8,
                   span: 16,
-
                 }}
               >
                 <button
@@ -160,13 +102,8 @@ export default function Footer() {
         </div>
 
         <div className="Cont_SocialMedia_foot">
-
-          
-            <h2 className="titles">Contact Us</h2>
-
           <div>
             <h2 className="titles" style={{marginBottom:"1em"}}>Contact Us</h2>
-
             <ul className="listing2">
               <li>
                 <b>Phone:</b> 123-456-7890
@@ -182,14 +119,9 @@ export default function Footer() {
                 <b>Address: </b>1234 Main Street, Anytown, USA 12345
               </li>
             </ul>
-
-       
-
-
           </div>
 
           <div>
-
             <p
               onClick={() => scrolltoTop("/")}
               style={{ cursor: "pointer" }}
@@ -211,9 +143,7 @@ export default function Footer() {
             >
               Cart
             </p>
-
           </div>
-
 
 
           <div className="shopByCate" >
