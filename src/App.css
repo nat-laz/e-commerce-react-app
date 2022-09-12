@@ -8,7 +8,7 @@
   --clr-neutral-900:rgb(56,56,56);
   --clr-neutral-1000:rgb(0,0,0);
 
-  --ff-primary: font-family: "Exo 2", sans-serif,
+  /* --ff-primary: font-family: Exo2, sans-serif, */
   
 }
 
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: var(--ff-primary);
+  font-family: 'Exo 2', sans-serif;
   font-weight: 400;
 /*   font-size: 1.3135rem; */
   line-height:1.6;

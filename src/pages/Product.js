@@ -31,7 +31,7 @@ export default function Product() {
     const singleProduct = products.find((item) => item.id === +id); //used "+" to convert in number
     console.log(singleProduct)
     setProduct(singleProduct);
-  }, []);
+  }, [id, products]);
 // console.log(product)
 // console.log(products)
   return (
