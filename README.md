@@ -1,12 +1,12 @@
 
-#All things INTERIOR - E-commerce Website
+# All things INTERIOR - E-commerce Website
 
 An e-commerce project built within one week to practice React fundamentals after finishing the React Basic Module, at DCI. 
 
-#DEMO:
+# DEMO:
 https://all-things-interior.netlify.app/
 
-#Features:
+# Features:
 - Products|Catalog with filtering options;
 - Product pages with detailed information and images;
 - Register|Login functionality, with user data saved in localStorage;
@@ -16,7 +16,28 @@ https://all-things-interior.netlify.app/
 - Easy integration with a backend;
 - Work in progress: Responsiveness.
 
-#Screenshots
+# Screenshots
 
-
+![alt](/src/assets/01.png)
+![alt](/src/assets/02.png)
  
+# Run Locally
+
+Clone the project
+
+```
+git clone git@github.com:nat-laz/e-commerce-react-app.git 
+
+Go to the project directory
+
+``` cd e-commerce-react-app
+
+Install dependencies
+
+```
+  npm install
+
+Start the server
+
+```
+  npm start
