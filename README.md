@@ -1,10 +1,9 @@
 
 # All things INTERIOR - E-commerce Website
 
-An e-commerce project built within one week to practice React fundamentals after finishing the React Basic Module, at DCI. 
+__An e-commerce project built within one week to practice React fundamentals after finishing the React Basic Module, at DCI.__
 
-# DEMO:
-https://all-things-interior.netlify.app/
+## DEMO: https://all-things-interior.netlify.app/
 
 # Features:
 - Products|Catalog with filtering options;
@@ -27,17 +26,20 @@ Clone the project
 
 ```
 git clone git@github.com:nat-laz/e-commerce-react-app.git 
-
+```
 Go to the project directory
 
-``` cd e-commerce-react-app
+``` 
+cd e-commerce-react-app
+```
 
 Install dependencies
 
 ```
-  npm install
-
+ npm install
+```
 Start the server
 
 ```
   npm start
+  ```
