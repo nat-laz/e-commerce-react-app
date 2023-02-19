@@ -3,7 +3,8 @@
 
 __An e-commerce project built within one week to practice React fundamentals after finishing the React Basic Module, at DCI.__
 
-## DEMO: https://all-things-interior.netlify.app/
+## DEMO: 
+https://all-things-interior.netlify.app/
 
 # Features:
 - Products|Catalog with filtering options;
